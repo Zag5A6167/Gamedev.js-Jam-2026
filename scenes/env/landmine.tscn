@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://hbayfylfgijm" path="res://images/landmine/landmine0001.png" id="2_5kut4"]
 [ext_resource type="Texture2D" uid="uid://dxv755mm7k4gd" path="res://images/landmine/landmine0002.png" id="3_l0p0i"]
 [ext_resource type="Texture2D" uid="uid://bv6brs2mja1a3" path="res://images/landmine/landmine0003.png" id="4_fsx8l"]
+[ext_resource type="AudioStream" uid="uid://eqf7kj0vecdp" path="res://sounds/sound_landmine.wav" id="6_l0p0i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dtt0a"]
 animations = [{
@@ -42,5 +43,8 @@ frame_progress = 0.8906078
 position = Vector2(-3, 23)
 scale = Vector2(4.7096663, 4.7096663)
 shape = SubResource("CircleShape2D_l18ru")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1728371247]
+stream = ExtResource("6_l0p0i")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -3,7 +3,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		print("Boom!")
-		
+		$AudioStreamPlayer.play()
 		
 		if body.has_method("set_physics_process"):
 			body.set_physics_process(false) 
