@@ -21,3 +21,8 @@ func _on_body_entered(body: Node2D) -> void:
 		
 		var fly_tween = create_tween()
 		fly_tween.tween_property(body, "position:y", body.position.y - 100000, 10.0)
+		
+		await get_tree().create_timer(6.0).timeout
+		
+	
+		get_tree().reload_current_scene()

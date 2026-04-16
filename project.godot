@@ -13,6 +13,7 @@ config_version=5
 config/name="New Game Project"
 run/main_scene="uid://dq7gasgb8khk1"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [display]

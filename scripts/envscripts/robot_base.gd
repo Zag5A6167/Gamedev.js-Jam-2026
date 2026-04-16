@@ -16,6 +16,7 @@ func robot_upgrade():
 	$AnimatedSprite2D.play("effect_change_body")
 	$AnimatedSprite2D_effect.play("effect")
 	await $AnimatedSprite2D_effect.animation_finished
+	$AudioStreamPlayer.play()
 	$AnimatedSprite2D.play("wake_up")
 	current_gears = 0
 	gears_needed = 50

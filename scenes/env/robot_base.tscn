@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dqb182sc33kno" path="res://images/bomb/bomb0007.png" id="10_8s5py"]
 [ext_resource type="Texture2D" uid="uid://n2bcyccv740l" path="res://images/bomb/bomb0008.png" id="11_2ivow"]
 [ext_resource type="Texture2D" uid="uid://d4hn6s7rep07a" path="res://images/bomb/bomb0009.png" id="12_l6eii"]
+[ext_resource type="AudioStream" uid="uid://bcfef3vbog3ts" path="res://sounds/explosion.wav" id="15_dlnhe"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlt10"]
 
@@ -139,6 +140,9 @@ position = Vector2(25, 43)
 scale = Vector2(0.28115854, 0.28115854)
 sprite_frames = SubResource("SpriteFrames_owcxo")
 animation = &"effect"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1609217658]
+stream = ExtResource("15_dlnhe")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

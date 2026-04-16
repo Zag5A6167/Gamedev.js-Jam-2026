@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cboly1em7vl2f" path="res://assets/items/gear.png" id="1_g7hyy"]
 [ext_resource type="Script" uid="uid://5kpsp2y80krx" path="res://scripts/envscripts/items/gear.gd" id="1_lbwef"]
-[ext_resource type="AudioStream" uid="uid://dspyeb0o6da4t" path="res://sounds/collect_item.wav" id="3_0ou75"]
+[ext_resource type="AudioStream" uid="uid://y4dyxpst2t88" path="res://sounds/pickup.wav" id="3_0ou75"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lbwef"]
 
@@ -35,5 +35,3 @@ text = "Press E to Collect"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=526641228]
 stream = ExtResource("3_0ou75")
-volume_db = -5.493
-pitch_scale = 0.97
