@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://dlod0b82ju70"]
 
+[ext_resource type="Script" uid="uid://cbhitx4pg1e0f" path="res://scripts/UIscripts/ui_canvas.gd" id="1_6sg5j"]
+[ext_resource type="Texture2D" uid="uid://cboly1em7vl2f" path="res://assets/items/gear.png" id="2_v4hh5"]
+
 [node name="ui_canvas" type="CanvasLayer" unique_id=2071771331]
+script = ExtResource("1_6sg5j")
 
 [node name="Control" type="Control" parent="." unique_id=296973427]
 layout_mode = 3
@@ -18,9 +22,17 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -57.0
-offset_top = -23.0
+offset_left = -115.0
+offset_top = -689.0
+offset_right = -47.0
+offset_bottom = -620.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(0.997376, 1)
-text = "TEST UI"
+theme_override_font_sizes/font_size = 50
+text = "???"
+
+[node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1174331475]
+position = Vector2(1101, 74.999985)
+scale = Vector2(0.047203407, 0.047203407)
+texture = ExtResource("2_v4hh5")

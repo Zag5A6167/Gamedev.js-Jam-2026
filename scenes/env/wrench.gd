@@ -1,7 +1,6 @@
 extends Area2D
 
 @onready var label = $InteractionLabel
-@onready var sound_player_collect_item = $AudioStreamPlayer
 var player_entered = false
 func _ready() -> void:
 	label.hide()
@@ -14,15 +13,9 @@ func _process(_delta: float) -> void:
 
 
 func interact():
-	var players = get_tree().get_nodes_in_group("player")
-	if players.size() > 0:
-		players[0].gears_held += 1
-		
-		
-	sound_player_collect_item.play()
-	await  sound_player_collect_item.finished
 	queue_free()
-		
+	
+	
 func _body_entered(body):
 	
 	if body.name == "player":
@@ -34,3 +27,4 @@ func _body_exited(body):
 	if body.name == "player":
 		player_entered = false
 		label.hide()
+		

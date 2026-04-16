@@ -35,11 +35,95 @@ position = Vector2(3906, 3203)
 [node name="gear7" parent="." unique_id=2145958123 instance=ExtResource("2_1xo34")]
 position = Vector2(2208, 2462)
 
+[node name="gear23" parent="." unique_id=1149921358 instance=ExtResource("2_1xo34")]
+position = Vector2(1600, 2801)
+
+[node name="gear24" parent="." unique_id=28189251 instance=ExtResource("2_1xo34")]
+position = Vector2(4243, 3175)
+
+[node name="gear25" parent="." unique_id=553453668 instance=ExtResource("2_1xo34")]
+position = Vector2(3504, 3426)
+
+[node name="gear26" parent="." unique_id=1994818577 instance=ExtResource("2_1xo34")]
+position = Vector2(1806, 2685)
+
+[node name="gear27" parent="." unique_id=1355892148 instance=ExtResource("2_1xo34")]
+position = Vector2(1850, 3007)
+
+[node name="gear28" parent="." unique_id=268411307 instance=ExtResource("2_1xo34")]
+position = Vector2(4493, 3381)
+
+[node name="gear29" parent="." unique_id=846974453 instance=ExtResource("2_1xo34")]
+position = Vector2(3754, 3632)
+
+[node name="gear30" parent="." unique_id=884026767 instance=ExtResource("2_1xo34")]
+position = Vector2(2056, 2891)
+
+[node name="gear31" parent="." unique_id=1211145239 instance=ExtResource("2_1xo34")]
+position = Vector2(2060, 3183)
+
+[node name="gear32" parent="." unique_id=82607885 instance=ExtResource("2_1xo34")]
+position = Vector2(4703, 3557)
+
+[node name="gear33" parent="." unique_id=2038683833 instance=ExtResource("2_1xo34")]
+position = Vector2(3964, 3808)
+
+[node name="gear34" parent="." unique_id=547195056 instance=ExtResource("2_1xo34")]
+position = Vector2(2266, 3067)
+
+[node name="gear35" parent="." unique_id=360074356 instance=ExtResource("2_1xo34")]
+position = Vector2(1891, 3132)
+
+[node name="gear36" parent="." unique_id=818426674 instance=ExtResource("2_1xo34")]
+position = Vector2(4534, 3506)
+
+[node name="gear37" parent="." unique_id=1059936228 instance=ExtResource("2_1xo34")]
+position = Vector2(3795, 3757)
+
+[node name="gear38" parent="." unique_id=1751748342 instance=ExtResource("2_1xo34")]
+position = Vector2(2097, 3016)
+
 [node name="gear8" parent="." unique_id=936223245 instance=ExtResource("2_1xo34")]
 position = Vector2(4939, 2197)
 
 [node name="gear9" parent="." unique_id=721921056 instance=ExtResource("2_1xo34")]
 position = Vector2(3515, 3531)
+
+[node name="gear11" parent="." unique_id=1546911041 instance=ExtResource("2_1xo34")]
+position = Vector2(1101, 2806)
+
+[node name="gear12" parent="." unique_id=813712737 instance=ExtResource("2_1xo34")]
+position = Vector2(3744, 3180)
+
+[node name="gear13" parent="." unique_id=585094065 instance=ExtResource("2_1xo34")]
+position = Vector2(3005, 3431)
+
+[node name="gear14" parent="." unique_id=1551151346 instance=ExtResource("2_1xo34")]
+position = Vector2(1307, 2690)
+
+[node name="gear15" parent="." unique_id=1498537674 instance=ExtResource("2_1xo34")]
+position = Vector2(4038, 2425)
+
+[node name="gear16" parent="." unique_id=891386577 instance=ExtResource("2_1xo34")]
+position = Vector2(2614, 3759)
+
+[node name="gear17" parent="." unique_id=1192293888 instance=ExtResource("2_1xo34")]
+position = Vector2(869, 2433)
+
+[node name="gear18" parent="." unique_id=1992867332 instance=ExtResource("2_1xo34")]
+position = Vector2(3512, 2807)
+
+[node name="gear19" parent="." unique_id=1585528742 instance=ExtResource("2_1xo34")]
+position = Vector2(2773, 3058)
+
+[node name="gear20" parent="." unique_id=1684276209 instance=ExtResource("2_1xo34")]
+position = Vector2(1075, 2317)
+
+[node name="gear21" parent="." unique_id=1947782349 instance=ExtResource("2_1xo34")]
+position = Vector2(3806, 2052)
+
+[node name="gear22" parent="." unique_id=582946838 instance=ExtResource("2_1xo34")]
+position = Vector2(2382, 3386)
 
 [node name="gear10" parent="." unique_id=989088988 instance=ExtResource("2_1xo34")]
 position = Vector2(3448, 2010)

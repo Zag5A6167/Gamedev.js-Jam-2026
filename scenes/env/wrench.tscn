@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://dh567p1y8yjy0"]
 
 [ext_resource type="Texture2D" uid="uid://bfpsvb3y4osqf" path="res://assets/items/wrench.png" id="1_hc6wf"]
+[ext_resource type="Script" uid="uid://uixr5ik5pauw" path="res://scenes/env/wrench.gd" id="1_ugded"]
 
-[node name="wrench" type="StaticBody2D" unique_id=1459635574]
+[sub_resource type="CircleShape2D" id="CircleShape2D_ugded"]
+radius = 81.608826
+
+[node name="wrench" type="Area2D" unique_id=281591882]
+script = ExtResource("1_ugded")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=607258520]
 position = Vector2(41, 75)
@@ -25,3 +30,7 @@ text = "Wrench
 Press E to Collect 
 "
 horizontal_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1737144401]
+position = Vector2(52, 62)
+shape = SubResource("CircleShape2D_ugded")
