@@ -5,7 +5,7 @@
 [node name="wrench" type="StaticBody2D" unique_id=1459635574]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=607258520]
-position = Vector2(-7.1629257, 8.148575)
+position = Vector2(41, 75)
 scale = Vector2(0.07648151, 0.07648151)
 texture = ExtResource("1_hc6wf")
 

@@ -17,7 +17,7 @@ offset_top = -29.0
 offset_right = 4966.0
 offset_bottom = 4971.0
 scale = Vector2(1.1393822, 1.275625)
-color = Color(0.71129656, 0.71129656, 0.7112965, 1)
+color = Color(0.5312364, 0.51506704, 0.3129515, 1)
 metadata/_edit_lock_ = true
 
 [node name="gear" parent="." unique_id=149182404 instance=ExtResource("2_1xo34")]
