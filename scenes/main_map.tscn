@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
 [ext_resource type="PackedScene" uid="uid://ba8tuyuydmn0l" path="res://scenes/items/fuel.tscn" id="4_uxg3y"]
 [ext_resource type="PackedScene" uid="uid://nj3p46f0ew2r" path="res://scenes/env/tree_1.tscn" id="5_kdyc3"]
+[ext_resource type="AudioStream" uid="uid://3wnw0gr7fl8y" path="res://sounds/menu_song.wav" id="6_4synu"]
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
@@ -38,4 +39,8 @@ position = Vector2(1154, 148)
 position = Vector2(736, 130)
 
 [node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
-process_mode = 0
+
+[node name="sound_bg" type="AudioStreamPlayer" parent="." unique_id=1679697370]
+stream = ExtResource("6_4synu")
+volume_db = -20.873
+autoplay = true
