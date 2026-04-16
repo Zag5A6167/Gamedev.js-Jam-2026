@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_whrjg"]
 [ext_resource type="PackedScene" uid="uid://br1ifqjqlvcf4" path="res://scenes/items/gear.tscn" id="2_1xo34"]
 [ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
+[ext_resource type="PackedScene" uid="uid://ba8tuyuydmn0l" path="res://scenes/items/fuel.tscn" id="4_uxg3y"]
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
@@ -21,3 +22,9 @@ position = Vector2(1023, 382)
 
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
 position = Vector2(230, 261)
+
+[node name="gear2" parent="." unique_id=1808192086 instance=ExtResource("4_uxg3y")]
+position = Vector2(745, 600)
+
+[node name="gear3" parent="." unique_id=108708399 instance=ExtResource("4_uxg3y")]
+position = Vector2(1000, 630)
