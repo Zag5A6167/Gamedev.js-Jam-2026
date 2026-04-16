@@ -18,27 +18,58 @@ offset_right = 4966.0
 offset_bottom = 4971.0
 scale = Vector2(1.1393822, 1.275625)
 color = Color(0.71129656, 0.71129656, 0.7112965, 1)
+metadata/_edit_lock_ = true
 
 [node name="gear" parent="." unique_id=149182404 instance=ExtResource("2_1xo34")]
-position = Vector2(1023, 382)
+position = Vector2(3906, 2124)
+
+[node name="gear4" parent="." unique_id=598557880 instance=ExtResource("2_1xo34")]
+position = Vector2(3402, 2846)
+
+[node name="gear5" parent="." unique_id=1647614007 instance=ExtResource("2_1xo34")]
+position = Vector2(4645, 2952)
+
+[node name="gear6" parent="." unique_id=773144920 instance=ExtResource("2_1xo34")]
+position = Vector2(3906, 3203)
+
+[node name="gear7" parent="." unique_id=2145958123 instance=ExtResource("2_1xo34")]
+position = Vector2(3779, 2368)
+
+[node name="gear8" parent="." unique_id=936223245 instance=ExtResource("2_1xo34")]
+position = Vector2(4939, 2197)
+
+[node name="gear9" parent="." unique_id=721921056 instance=ExtResource("2_1xo34")]
+position = Vector2(3515, 3531)
+
+[node name="gear10" parent="." unique_id=989088988 instance=ExtResource("2_1xo34")]
+position = Vector2(3448, 2010)
 
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
-position = Vector2(230, 261)
+position = Vector2(2299, 2778)
 
 [node name="gear2" parent="." unique_id=1808192086 instance=ExtResource("4_uxg3y")]
-position = Vector2(745, 600)
+position = Vector2(2814, 3117)
 
 [node name="gear3" parent="." unique_id=108708399 instance=ExtResource("4_uxg3y")]
-position = Vector2(1000, 630)
+position = Vector2(3069, 3147)
 
 [node name="tree1" parent="." unique_id=2057263366 instance=ExtResource("5_kdyc3")]
-position = Vector2(498, 546)
+position = Vector2(2567, 3063)
 
 [node name="tree2" parent="." unique_id=363049159 instance=ExtResource("5_kdyc3")]
-position = Vector2(1154, 148)
+position = Vector2(3223, 2665)
 
 [node name="tree3" parent="." unique_id=516856270 instance=ExtResource("5_kdyc3")]
-position = Vector2(736, 130)
+position = Vector2(3231.0002, 1835.0002)
+
+[node name="tree4" parent="." unique_id=17055422 instance=ExtResource("5_kdyc3")]
+position = Vector2(821, 1529)
+
+[node name="tree5" parent="." unique_id=2027535912 instance=ExtResource("5_kdyc3")]
+position = Vector2(3203, 837)
+
+[node name="tree6" parent="." unique_id=1309227074 instance=ExtResource("5_kdyc3")]
+position = Vector2(2025, 2062)
 
 [node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
 
@@ -48,7 +79,7 @@ volume_db = -20.873
 autoplay = true
 
 [node name="robot_base" parent="." unique_id=1459635574 instance=ExtResource("7_cyf2o")]
-position = Vector2(566, 293)
+position = Vector2(2517, 2604)
 
 [node name="wrench" parent="." unique_id=1498437868 instance=ExtResource("8_64gt2")]
-position = Vector2(949, 188)
+position = Vector2(4640, 1692)

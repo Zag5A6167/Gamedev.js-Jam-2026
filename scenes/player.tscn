@@ -93,3 +93,5 @@ autoplay = &"idle"
 scale = Vector2(21.649244, 21.649244)
 shape = SubResource("CircleShape2D_g2els")
 debug_color = Color(0.6589286, 0.5152376, 0.035838734, 0.41960785)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1018125021]
