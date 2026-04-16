@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://3wnw0gr7fl8y" path="res://sounds/menu_song.wav" id="6_4synu"]
 [ext_resource type="PackedScene" uid="uid://e3raa0ucutg5" path="res://scenes/env/robot_base.tscn" id="7_cyf2o"]
 [ext_resource type="PackedScene" uid="uid://dh567p1y8yjy0" path="res://scenes/env/wrench.tscn" id="8_64gt2"]
+[ext_resource type="PackedScene" uid="uid://c8at20ooi42of" path="res://scenes/env/landmine.tscn" id="9_2xk3c"]
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
@@ -21,112 +22,37 @@ color = Color(0.5312364, 0.51506704, 0.3129515, 1)
 metadata/_edit_lock_ = true
 
 [node name="gear" parent="." unique_id=149182404 instance=ExtResource("2_1xo34")]
-position = Vector2(3906, 2124)
-
-[node name="gear4" parent="." unique_id=598557880 instance=ExtResource("2_1xo34")]
-position = Vector2(2002, 2578)
-
-[node name="gear5" parent="." unique_id=1647614007 instance=ExtResource("2_1xo34")]
-position = Vector2(4645, 2952)
-
-[node name="gear6" parent="." unique_id=773144920 instance=ExtResource("2_1xo34")]
-position = Vector2(3906, 3203)
+position = Vector2(1910, 2650)
 
 [node name="gear7" parent="." unique_id=2145958123 instance=ExtResource("2_1xo34")]
-position = Vector2(2208, 2462)
-
-[node name="gear23" parent="." unique_id=1149921358 instance=ExtResource("2_1xo34")]
-position = Vector2(1600, 2801)
-
-[node name="gear24" parent="." unique_id=28189251 instance=ExtResource("2_1xo34")]
-position = Vector2(4243, 3175)
-
-[node name="gear25" parent="." unique_id=553453668 instance=ExtResource("2_1xo34")]
-position = Vector2(3504, 3426)
-
-[node name="gear26" parent="." unique_id=1994818577 instance=ExtResource("2_1xo34")]
-position = Vector2(1806, 2685)
-
-[node name="gear27" parent="." unique_id=1355892148 instance=ExtResource("2_1xo34")]
-position = Vector2(1850, 3007)
-
-[node name="gear28" parent="." unique_id=268411307 instance=ExtResource("2_1xo34")]
-position = Vector2(4493, 3381)
-
-[node name="gear29" parent="." unique_id=846974453 instance=ExtResource("2_1xo34")]
-position = Vector2(3754, 3632)
-
-[node name="gear30" parent="." unique_id=884026767 instance=ExtResource("2_1xo34")]
-position = Vector2(2056, 2891)
-
-[node name="gear31" parent="." unique_id=1211145239 instance=ExtResource("2_1xo34")]
-position = Vector2(2060, 3183)
-
-[node name="gear32" parent="." unique_id=82607885 instance=ExtResource("2_1xo34")]
-position = Vector2(4703, 3557)
-
-[node name="gear33" parent="." unique_id=2038683833 instance=ExtResource("2_1xo34")]
-position = Vector2(3964, 3808)
+position = Vector2(2076, 2819)
 
 [node name="gear34" parent="." unique_id=547195056 instance=ExtResource("2_1xo34")]
-position = Vector2(2266, 3067)
-
-[node name="gear35" parent="." unique_id=360074356 instance=ExtResource("2_1xo34")]
-position = Vector2(1891, 3132)
-
-[node name="gear36" parent="." unique_id=818426674 instance=ExtResource("2_1xo34")]
-position = Vector2(4534, 3506)
-
-[node name="gear37" parent="." unique_id=1059936228 instance=ExtResource("2_1xo34")]
-position = Vector2(3795, 3757)
-
-[node name="gear38" parent="." unique_id=1751748342 instance=ExtResource("2_1xo34")]
-position = Vector2(2097, 3016)
-
-[node name="gear8" parent="." unique_id=936223245 instance=ExtResource("2_1xo34")]
-position = Vector2(4939, 2197)
-
-[node name="gear9" parent="." unique_id=721921056 instance=ExtResource("2_1xo34")]
-position = Vector2(3515, 3531)
-
-[node name="gear11" parent="." unique_id=1546911041 instance=ExtResource("2_1xo34")]
-position = Vector2(1101, 2806)
-
-[node name="gear12" parent="." unique_id=813712737 instance=ExtResource("2_1xo34")]
-position = Vector2(3744, 3180)
+position = Vector2(2093, 2982)
 
 [node name="gear13" parent="." unique_id=585094065 instance=ExtResource("2_1xo34")]
-position = Vector2(3005, 3431)
-
-[node name="gear14" parent="." unique_id=1551151346 instance=ExtResource("2_1xo34")]
-position = Vector2(1307, 2690)
+position = Vector2(1876, 3005)
 
 [node name="gear15" parent="." unique_id=1498537674 instance=ExtResource("2_1xo34")]
-position = Vector2(4038, 2425)
+position = Vector2(1888, 2811)
 
 [node name="gear16" parent="." unique_id=891386577 instance=ExtResource("2_1xo34")]
-position = Vector2(2614, 3759)
-
-[node name="gear17" parent="." unique_id=1192293888 instance=ExtResource("2_1xo34")]
-position = Vector2(869, 2433)
+position = Vector2(2291, 3197)
 
 [node name="gear18" parent="." unique_id=1992867332 instance=ExtResource("2_1xo34")]
-position = Vector2(3512, 2807)
+position = Vector2(2097, 2638)
 
 [node name="gear19" parent="." unique_id=1585528742 instance=ExtResource("2_1xo34")]
 position = Vector2(2773, 3058)
 
-[node name="gear20" parent="." unique_id=1684276209 instance=ExtResource("2_1xo34")]
-position = Vector2(1075, 2317)
-
 [node name="gear21" parent="." unique_id=1947782349 instance=ExtResource("2_1xo34")]
-position = Vector2(3806, 2052)
+position = Vector2(1994, 2511)
 
 [node name="gear22" parent="." unique_id=582946838 instance=ExtResource("2_1xo34")]
-position = Vector2(2382, 3386)
+position = Vector2(2125, 3180)
 
 [node name="gear10" parent="." unique_id=989088988 instance=ExtResource("2_1xo34")]
-position = Vector2(3448, 2010)
+position = Vector2(2209, 2469)
 
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
 position = Vector2(2299, 2778)
@@ -137,24 +63,6 @@ position = Vector2(2814, 3117)
 [node name="gear3" parent="." unique_id=108708399 instance=ExtResource("4_uxg3y")]
 position = Vector2(3069, 3147)
 
-[node name="tree1" parent="." unique_id=2057263366 instance=ExtResource("5_kdyc3")]
-position = Vector2(2567, 3063)
-
-[node name="tree2" parent="." unique_id=363049159 instance=ExtResource("5_kdyc3")]
-position = Vector2(3223, 2665)
-
-[node name="tree3" parent="." unique_id=516856270 instance=ExtResource("5_kdyc3")]
-position = Vector2(3231.0002, 1835.0002)
-
-[node name="tree4" parent="." unique_id=17055422 instance=ExtResource("5_kdyc3")]
-position = Vector2(821, 1529)
-
-[node name="tree5" parent="." unique_id=2027535912 instance=ExtResource("5_kdyc3")]
-position = Vector2(3203, 837)
-
-[node name="tree6" parent="." unique_id=1309227074 instance=ExtResource("5_kdyc3")]
-position = Vector2(2025, 2062)
-
 [node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
 
 [node name="sound_bg" type="AudioStreamPlayer" parent="." unique_id=1679697370]
@@ -164,6 +72,105 @@ autoplay = true
 
 [node name="robot_base" parent="." unique_id=1459635574 instance=ExtResource("7_cyf2o")]
 position = Vector2(2517, 2604)
+metadata/_edit_lock_ = true
 
 [node name="wrench" parent="." unique_id=1498437868 instance=ExtResource("8_64gt2")]
 position = Vector2(2859, 2462)
+
+[node name="tree_group" type="Node2D" parent="." unique_id=2004539881]
+
+[node name="tree1" parent="tree_group" unique_id=2057263366 instance=ExtResource("5_kdyc3")]
+position = Vector2(2567, 3063)
+
+[node name="tree2" parent="tree_group" unique_id=363049159 instance=ExtResource("5_kdyc3")]
+position = Vector2(3223, 2665)
+
+[node name="tree3" parent="tree_group" unique_id=516856270 instance=ExtResource("5_kdyc3")]
+position = Vector2(3231.0002, 1835.0002)
+
+[node name="tree4" parent="tree_group" unique_id=17055422 instance=ExtResource("5_kdyc3")]
+position = Vector2(821, 1529)
+
+[node name="tree5" parent="tree_group" unique_id=2027535912 instance=ExtResource("5_kdyc3")]
+position = Vector2(3203, 837)
+
+[node name="tree6" parent="tree_group" unique_id=1309227074 instance=ExtResource("5_kdyc3")]
+position = Vector2(2025, 2062)
+
+[node name="tree7" parent="tree_group" unique_id=521300907 instance=ExtResource("5_kdyc3")]
+position = Vector2(4284, 2800)
+
+[node name="tree8" parent="tree_group" unique_id=496577626 instance=ExtResource("5_kdyc3")]
+position = Vector2(4940, 2402)
+
+[node name="tree9" parent="tree_group" unique_id=1868492054 instance=ExtResource("5_kdyc3")]
+position = Vector2(4948, 1572.0002)
+
+[node name="tree10" parent="tree_group" unique_id=646463021 instance=ExtResource("5_kdyc3")]
+position = Vector2(2538, 1266)
+
+[node name="tree11" parent="tree_group" unique_id=1149396873 instance=ExtResource("5_kdyc3")]
+position = Vector2(4920, 574)
+
+[node name="tree12" parent="tree_group" unique_id=2128121698 instance=ExtResource("5_kdyc3")]
+position = Vector2(3742, 1799)
+
+[node name="tree13" parent="tree_group" unique_id=1861766481 instance=ExtResource("5_kdyc3")]
+position = Vector2(2246, 4772)
+
+[node name="tree14" parent="tree_group" unique_id=454372492 instance=ExtResource("5_kdyc3")]
+position = Vector2(2107, 3908)
+
+[node name="tree15" parent="tree_group" unique_id=1525058532 instance=ExtResource("5_kdyc3")]
+position = Vector2(2910.0002, 3544.0002)
+
+[node name="tree16" parent="tree_group" unique_id=1261743503 instance=ExtResource("5_kdyc3")]
+position = Vector2(500, 3238)
+
+[node name="tree17" parent="tree_group" unique_id=1550943803 instance=ExtResource("5_kdyc3")]
+position = Vector2(2882, 2546)
+
+[node name="tree18" parent="tree_group" unique_id=51314544 instance=ExtResource("5_kdyc3")]
+position = Vector2(1704, 3771)
+
+[node name="tree19" parent="tree_group" unique_id=999269099 instance=ExtResource("5_kdyc3")]
+position = Vector2(2389, 4168)
+
+[node name="tree20" parent="tree_group" unique_id=556235784 instance=ExtResource("5_kdyc3")]
+position = Vector2(4619, 4111)
+
+[node name="tree21" parent="tree_group" unique_id=1876032221 instance=ExtResource("5_kdyc3")]
+position = Vector2(4627, 3281.0002)
+
+[node name="tree22" parent="tree_group" unique_id=424692416 instance=ExtResource("5_kdyc3")]
+position = Vector2(2217, 2975)
+
+[node name="tree23" parent="tree_group" unique_id=714070479 instance=ExtResource("5_kdyc3")]
+position = Vector2(4599, 2283)
+
+[node name="tree24" parent="tree_group" unique_id=86378907 instance=ExtResource("5_kdyc3")]
+position = Vector2(3421, 3508)
+
+[node name="tree25" parent="tree_group" unique_id=1870339718 instance=ExtResource("5_kdyc3")]
+position = Vector2(2203, 3940)
+
+[node name="tree26" parent="tree_group" unique_id=1131891280 instance=ExtResource("5_kdyc3")]
+position = Vector2(2634, 4153)
+
+[node name="tree27" parent="tree_group" unique_id=1185096877 instance=ExtResource("5_kdyc3")]
+position = Vector2(2728, 4057)
+
+[node name="tree28" parent="tree_group" unique_id=1864831806 instance=ExtResource("5_kdyc3")]
+position = Vector2(2845, 4039)
+
+[node name="tree29" parent="tree_group" unique_id=1521821253 instance=ExtResource("5_kdyc3")]
+position = Vector2(2524, 4165)
+
+[node name="tree30" parent="tree_group" unique_id=1154908942 instance=ExtResource("5_kdyc3")]
+position = Vector2(2854, 3857)
+
+[node name="tree31" parent="tree_group" unique_id=1830423500 instance=ExtResource("5_kdyc3")]
+position = Vector2(2273, 4086)
+
+[node name="landmine2" parent="." unique_id=1395869294 instance=ExtResource("9_2xk3c")]
+position = Vector2(2492, 3938)

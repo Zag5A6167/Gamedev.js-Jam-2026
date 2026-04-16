@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c8at20ooi42of"]
+
+[ext_resource type="Script" uid="uid://c2uhy4g4hkckb" path="res://scenes/env/landmine.gd" id="1_5kut4"]
+[ext_resource type="Texture2D" uid="uid://c71mncfwsaxa8" path="res://images/landmine/landmine0000.png" id="1_l18ru"]
+[ext_resource type="Texture2D" uid="uid://hbayfylfgijm" path="res://images/landmine/landmine0001.png" id="2_5kut4"]
+[ext_resource type="Texture2D" uid="uid://dxv755mm7k4gd" path="res://images/landmine/landmine0002.png" id="3_l0p0i"]
+[ext_resource type="Texture2D" uid="uid://bv6brs2mja1a3" path="res://images/landmine/landmine0003.png" id="4_fsx8l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dtt0a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l18ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5kut4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_l0p0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fsx8l")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l18ru"]
+
+[node name="landmine" type="Area2D" unique_id=1395869294]
+script = ExtResource("1_5kut4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1305832748]
+scale = Vector2(0.078634724, 0.078634724)
+sprite_frames = SubResource("SpriteFrames_dtt0a")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.8906078
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715405294]
+position = Vector2(-3, 23)
+scale = Vector2(4.7096663, 4.7096663)
+shape = SubResource("CircleShape2D_l18ru")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
