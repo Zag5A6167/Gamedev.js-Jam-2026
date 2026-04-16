@@ -13,6 +13,9 @@ func _process(_delta: float) -> void:
 
 
 func interact():
+	var players = get_tree().get_nodes_in_group("player")
+	if players.size() > 0:
+		players[0].gears_held += 1
 	queue_free()
 		
 func _body_entered(body):

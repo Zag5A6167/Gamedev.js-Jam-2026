@@ -24,7 +24,7 @@ metadata/_edit_lock_ = true
 position = Vector2(3906, 2124)
 
 [node name="gear4" parent="." unique_id=598557880 instance=ExtResource("2_1xo34")]
-position = Vector2(3402, 2846)
+position = Vector2(2002, 2578)
 
 [node name="gear5" parent="." unique_id=1647614007 instance=ExtResource("2_1xo34")]
 position = Vector2(4645, 2952)
@@ -33,7 +33,7 @@ position = Vector2(4645, 2952)
 position = Vector2(3906, 3203)
 
 [node name="gear7" parent="." unique_id=2145958123 instance=ExtResource("2_1xo34")]
-position = Vector2(3779, 2368)
+position = Vector2(2208, 2462)
 
 [node name="gear8" parent="." unique_id=936223245 instance=ExtResource("2_1xo34")]
 position = Vector2(4939, 2197)

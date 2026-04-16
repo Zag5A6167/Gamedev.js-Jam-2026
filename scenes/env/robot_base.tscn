@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://e3raa0ucutg5"]
 
+[ext_resource type="Script" uid="uid://dxxcwfsg7vq27" path="res://scripts/envscripts/robot_base.gd" id="1_mlt10"]
 [ext_resource type="Texture2D" uid="uid://r7ol84arxxes" path="res://images/robot/robot.png" id="1_sq6s8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlt10"]
@@ -42,7 +43,10 @@ _data = {
 &"idle": SubResource("Animation_mlt10")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_h3nmb"]
+
 [node name="robot_base" type="StaticBody2D" unique_id=1459635574]
+script = ExtResource("1_mlt10")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=607258520]
 position = Vector2(46, -44)
@@ -58,7 +62,7 @@ shape = SubResource("CircleShape2D_mlt10")
 libraries/ = SubResource("AnimationLibrary_h3nmb")
 autoplay = &"idle"
 
-[node name="InteractionLabel" type="Label" parent="." unique_id=919390027]
+[node name="Label" type="Label" parent="." unique_id=919390027]
 z_index = 20
 offset_left = -51.0
 offset_top = -218.0
@@ -70,4 +74,14 @@ theme_override_constants/shadow_offset_y = 17
 theme_override_constants/outline_size = 9
 theme_override_constants/shadow_outline_size = 9
 theme_override_font_sizes/font_size = 23
-text = "0 / 100"
+text = "0/0"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1862619799]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1280261061]
+position = Vector2(43.999996, -3)
+scale = Vector2(-13.122069, 13.211444)
+shape = SubResource("CircleShape2D_h3nmb")
+debug_color = Color(0.58669895, 0.52881074, 0.42221898, 0.41960785)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

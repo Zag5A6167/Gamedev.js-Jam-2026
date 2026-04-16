@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 const SPEED = 300.0
+var gears_held = 0
+
 
 func _physics_process(delta: float) -> void:
 	
