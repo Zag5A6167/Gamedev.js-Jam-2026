@@ -82,4 +82,4 @@ autoplay = true
 position = Vector2(2517, 2604)
 
 [node name="wrench" parent="." unique_id=1498437868 instance=ExtResource("8_64gt2")]
-position = Vector2(4640, 1692)
+position = Vector2(2859, 2462)
