@@ -10,6 +10,18 @@
 [ext_resource type="PackedScene" uid="uid://dh567p1y8yjy0" path="res://scenes/env/wrench.tscn" id="8_64gt2"]
 [ext_resource type="PackedScene" uid="uid://c8at20ooi42of" path="res://scenes/env/landmine.tscn" id="9_2xk3c"]
 
+[sub_resource type="Gradient" id="Gradient_2xk3c"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ulx81"]
+gradient = SubResource("Gradient_2xk3c")
+fill = 1
+fill_from = Vector2(0.5260417, 0.43229166)
+fill_to = Vector2(0.6336806, 0.5885417)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2xk3c"]
+polygon = PackedVector2Array(-433, -630, -526, 6951, 6107, 6710, 6126, -853)
+
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
 [node name="background_map" type="ColorRect" parent="." unique_id=382111132]
@@ -119,7 +131,7 @@ position = Vector2(3742, 1799)
 position = Vector2(2246, 4772)
 
 [node name="tree14" parent="tree_group" unique_id=454372492 instance=ExtResource("5_kdyc3")]
-position = Vector2(2107, 3908)
+position = Vector2(4686, 5871)
 
 [node name="tree15" parent="tree_group" unique_id=1525058532 instance=ExtResource("5_kdyc3")]
 position = Vector2(2910.0002, 3544.0002)
@@ -134,7 +146,7 @@ position = Vector2(2882, 2546)
 position = Vector2(1704, 3771)
 
 [node name="tree19" parent="tree_group" unique_id=999269099 instance=ExtResource("5_kdyc3")]
-position = Vector2(2389, 4168)
+position = Vector2(4968, 6131)
 
 [node name="tree20" parent="tree_group" unique_id=556235784 instance=ExtResource("5_kdyc3")]
 position = Vector2(4619, 4111)
@@ -152,25 +164,49 @@ position = Vector2(4599, 2283)
 position = Vector2(3421, 3508)
 
 [node name="tree25" parent="tree_group" unique_id=1870339718 instance=ExtResource("5_kdyc3")]
-position = Vector2(2203, 3940)
+position = Vector2(4782, 5903)
 
 [node name="tree26" parent="tree_group" unique_id=1131891280 instance=ExtResource("5_kdyc3")]
-position = Vector2(2634, 4153)
+position = Vector2(5213, 6116)
 
 [node name="tree27" parent="tree_group" unique_id=1185096877 instance=ExtResource("5_kdyc3")]
-position = Vector2(2728, 4057)
+position = Vector2(5307, 6020)
 
 [node name="tree28" parent="tree_group" unique_id=1864831806 instance=ExtResource("5_kdyc3")]
-position = Vector2(2845, 4039)
+position = Vector2(5424, 6002)
 
 [node name="tree29" parent="tree_group" unique_id=1521821253 instance=ExtResource("5_kdyc3")]
-position = Vector2(2524, 4165)
+position = Vector2(5103, 6128)
 
 [node name="tree30" parent="tree_group" unique_id=1154908942 instance=ExtResource("5_kdyc3")]
-position = Vector2(2854, 3857)
+position = Vector2(5433, 5820)
 
 [node name="tree31" parent="tree_group" unique_id=1830423500 instance=ExtResource("5_kdyc3")]
-position = Vector2(2273, 4086)
+position = Vector2(4852, 6049)
 
 [node name="landmine2" parent="." unique_id=1395869294 instance=ExtResource("9_2xk3c")]
-position = Vector2(2492, 3938)
+position = Vector2(5071, 5901)
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1783933576]
+position = Vector2(2688.1719, 3117)
+scale = Vector2(126.72946, 117.30925)
+color = Color(0.60585105, 0.38789904, 1, 1)
+energy = 0.52
+blend_mode = 2
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.83137256)
+texture = SubResource("GradientTexture2D_ulx81")
+texture_scale = 0.81
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=2053155749]
+position = Vector2(5012.0005, 6296)
+scale = Vector2(117.30925, 117.30925)
+color = Color(0.37697807, 0.51095587, 0.9432658, 1)
+energy = 2.08
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_ulx81")
+texture_scale = 0.81
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1418135732]
+position = Vector2(181, 191)
+occluder = SubResource("OccluderPolygon2D_2xk3c")

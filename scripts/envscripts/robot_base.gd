@@ -2,38 +2,53 @@ extends StaticBody2D
 
 var gears_needed = 10 
 var current_gears = 0
-var is_player_entered = false
+var robot_level = 1 
+
 func _ready() -> void:
-	$Label.text = str(current_gears) + " / " + str(gears_needed)
+	update_ui()
 	$AnimatedSprite2D.play("dead")
+
 func update_ui():
 	$Label.text = str(current_gears) + " / " + str(gears_needed)
 	if current_gears >= gears_needed:
 		robot_upgrade()
 
 func robot_upgrade():
-	print("robot upgraded")
-	$AnimatedSprite2D.play("effect_change_body")
-	$AnimatedSprite2D_effect.play("effect")
-	await $AnimatedSprite2D_effect.animation_finished
-	$AudioStreamPlayer.play()
-	$AnimatedSprite2D.play("wake_up")
-	current_gears = 0
-	gears_needed = 50
-	update_ui()
+
+	if robot_level >= 3 and current_gears >= 100:
+		game_complete()
+		return
+
+	print("Robot Level Upgraded to Level: ", robot_level + 1)
 	
 
+	$AnimatedSprite2D.play("effect_change_body")
+	if has_node("AnimatedSprite2D_effect"):
+		$AnimatedSprite2D_effect.play("effect")
+		await $AnimatedSprite2D_effect.animation_finished
+	
+	$AudioStreamPlayer.play()
+	$AnimatedSprite2D.play("wake_up")
+	
 
+	robot_level += 1
+	current_gears = 0 #
+	
+	if robot_level == 2:
+		gears_needed = 50
+	elif robot_level == 3:
+		gears_needed = 100
+	
+	update_ui()
 
+func game_complete():
+	print("Game Complete!")
+	$Label.text = "MISSION COMPLETE"
+	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	is_player_entered = true
-	if body.name == "player" and body.gears_held > 0:
-		
+	
+	if body.is_in_group("player") and body.gears_held > 0:
 		current_gears += body.gears_held
 		body.gears_held = 0 
 		update_ui()
-
-
-func _on_area_2d_body_exited(body: Node2D) -> void:
-	is_player_entered = false
