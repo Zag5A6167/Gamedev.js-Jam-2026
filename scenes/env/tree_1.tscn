@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://nj3p46f0ew2r"]
+
+[ext_resource type="Texture2D" uid="uid://c5ddgcuhn0xd2" path="res://assets/env/tree1.png" id="1_hmoyn"]
+[ext_resource type="Script" uid="uid://dfsq5htggtlqb" path="res://scenes/env/tree_1.gd" id="1_r8xhi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8xhi"]
+size = Vector2(18.732094, 16.116705)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_63s1d"]
+size = Vector2(20, 18.766762)
+
+[sub_resource type="Animation" id="Animation_r8xhi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_63s1d"]
+resource_name = "is_atk"
+length = 0.033333335
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-12.585, 0), Vector2(6.29, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b8jwv"]
+_data = {
+&"RESET": SubResource("Animation_r8xhi"),
+&"is_atk": SubResource("Animation_63s1d")
+}
+
+[node name="tree1" type="StaticBody2D" unique_id=2057263366]
+scale = Vector2(0.15755504, 0.15755504)
+input_pickable = true
+script = ExtResource("1_r8xhi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=690894318]
+scale = Vector2(0.5362814, 0.5362814)
+texture = ExtResource("1_hmoyn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411355009]
+position = Vector2(-25.387947, 469.6772)
+scale = Vector2(23.718075, 26.978838)
+shape = SubResource("RectangleShape2D_r8xhi")
+
+[node name="tree_interact" type="Area2D" parent="." unique_id=390252588]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tree_interact" unique_id=809772867]
+position = Vector2(0, 30.803112)
+scale = Vector2(28.340996, 49.954845)
+shape = SubResource("RectangleShape2D_63s1d")
+debug_color = Color(0.99897593, 0, 0.139961, 0.41960785)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1449997169]
+libraries/ = SubResource("AnimationLibrary_b8jwv")
+
+[connection signal="input_event" from="tree_interact" to="." method="_on_tree_interact_input_event"]

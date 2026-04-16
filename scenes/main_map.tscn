@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://br1ifqjqlvcf4" path="res://scenes/items/gear.tscn" id="2_1xo34"]
 [ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
 [ext_resource type="PackedScene" uid="uid://ba8tuyuydmn0l" path="res://scenes/items/fuel.tscn" id="4_uxg3y"]
+[ext_resource type="PackedScene" uid="uid://nj3p46f0ew2r" path="res://scenes/env/tree_1.tscn" id="5_kdyc3"]
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
@@ -18,8 +19,6 @@ color = Color(0.71129656, 0.71129656, 0.7112965, 1)
 [node name="gear" parent="." unique_id=149182404 instance=ExtResource("2_1xo34")]
 position = Vector2(1023, 382)
 
-[node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
-
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
 position = Vector2(230, 261)
 
@@ -28,3 +27,15 @@ position = Vector2(745, 600)
 
 [node name="gear3" parent="." unique_id=108708399 instance=ExtResource("4_uxg3y")]
 position = Vector2(1000, 630)
+
+[node name="tree1" parent="." unique_id=2057263366 instance=ExtResource("5_kdyc3")]
+position = Vector2(498, 546)
+
+[node name="tree2" parent="." unique_id=363049159 instance=ExtResource("5_kdyc3")]
+position = Vector2(1154, 148)
+
+[node name="tree3" parent="." unique_id=516856270 instance=ExtResource("5_kdyc3")]
+position = Vector2(736, 130)
+
+[node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
+process_mode = 0

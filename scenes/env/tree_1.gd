@@ -1,0 +1,32 @@
+extends StaticBody2D 
+
+var player_entered = false
+
+func _ready() -> void:
+	# 1. เชื่อมสัญญาณการเดินเข้า/ออก (อันเดิมของนาย)
+	$tree_interact.body_entered.connect(_on_player_enter)
+	$tree_interact.body_exited.connect(_on_player_exit)
+	
+	# 2. เชื่อมสัญญาณการคลิกเมาส์จากตัวลูก (เพิ่มอันนี้!)
+	$tree_interact.input_event.connect(_on_tree_interact_input_event)
+	
+	# 3. ต้องเปิด Pickable ที่ตัวลูกด้วยนะนาย (เผื่อลืมติ๊กในหน้าจอ)
+	$tree_interact.input_pickable = true
+
+func _on_player_enter(body):
+	if body.name == "player":
+		print("Entered")
+		player_entered = true
+
+func _on_player_exit(body):
+	if body.name == "player":
+		player_entered = false
+
+
+
+func _on_tree_interact_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		if player_entered:
+			
+			$AnimationPlayer.play("is_atk")
+		
