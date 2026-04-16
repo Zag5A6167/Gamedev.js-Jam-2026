@@ -3,14 +3,14 @@ extends StaticBody2D
 var player_entered = false
 
 func _ready() -> void:
-	# 1. เชื่อมสัญญาณการเดินเข้า/ออก (อันเดิมของนาย)
+	
 	$tree_interact.body_entered.connect(_on_player_enter)
 	$tree_interact.body_exited.connect(_on_player_exit)
 	
-	# 2. เชื่อมสัญญาณการคลิกเมาส์จากตัวลูก (เพิ่มอันนี้!)
+	
 	$tree_interact.input_event.connect(_on_tree_interact_input_event)
 	
-	# 3. ต้องเปิด Pickable ที่ตัวลูกด้วยนะนาย (เผื่อลืมติ๊กในหน้าจอ)
+	
 	$tree_interact.input_pickable = true
 
 func _on_player_enter(body):
