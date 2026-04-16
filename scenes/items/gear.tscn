@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://br1ifqjqlvcf4"]
+
+[ext_resource type="Texture2D" uid="uid://cboly1em7vl2f" path="res://assets/items/gear.png" id="1_g7hyy"]
+[ext_resource type="Script" uid="uid://5kpsp2y80krx" path="res://scripts/envscripts/items/gear.gd" id="1_lbwef"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lbwef"]
+
+[node name="gear" type="Area2D" unique_id=149182404]
+scale = Vector2(1, 1.0146674)
+script = ExtResource("1_lbwef")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=155205115]
+scale = Vector2(0.05996154, 0.05996154)
+texture = ExtResource("1_g7hyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=812919465]
+position = Vector2(0, -3)
+scale = Vector2(4.797812, 4.731509)
+shape = SubResource("CircleShape2D_lbwef")
+
+[node name="InteractionLabel" type="Label" parent="." unique_id=703060974]
+z_index = 20
+offset_left = -120.0
+offset_top = -131.07745
+offset_right = 69.0
+offset_bottom = -99.07745
+scale = Vector2(1.3531282, 1.3531282)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 23
+text = "Press E to Collect"

@@ -4,7 +4,7 @@ const SPEED = 300.0
 
 func _physics_process(delta: float) -> void:
 	
-	var direction := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var direction := Input.get_vector("a", "d", "w", "s")
 	
 	if direction != Vector2.ZERO:
 		
@@ -15,3 +15,4 @@ func _physics_process(delta: float) -> void:
 
 
 	move_and_slide()
+# 

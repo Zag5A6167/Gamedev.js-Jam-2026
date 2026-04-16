@@ -1,15 +1,23 @@
 [gd_scene format=3 uid="uid://dq7gasgb8khk1"]
 
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_whrjg"]
+[ext_resource type="PackedScene" uid="uid://br1ifqjqlvcf4" path="res://scenes/items/gear.tscn" id="2_1xo34"]
+[ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
 [node name="background_map" type="ColorRect" parent="." unique_id=382111132]
 offset_left = -34.0
 offset_top = -29.0
-offset_right = 3639.0
-offset_bottom = 2572.0
+offset_right = 4966.0
+offset_bottom = 4971.0
+scale = Vector2(1.1393822, 1.275625)
 color = Color(0.71129656, 0.71129656, 0.7112965, 1)
 
+[node name="gear" parent="." unique_id=149182404 instance=ExtResource("2_1xo34")]
+position = Vector2(1023, 382)
+
+[node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
+
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
-position = Vector2(387, 241)
+position = Vector2(230, 261)
