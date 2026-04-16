@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ba8tuyuydmn0l" path="res://scenes/items/fuel.tscn" id="4_uxg3y"]
 [ext_resource type="PackedScene" uid="uid://nj3p46f0ew2r" path="res://scenes/env/tree_1.tscn" id="5_kdyc3"]
 [ext_resource type="AudioStream" uid="uid://3wnw0gr7fl8y" path="res://sounds/menu_song.wav" id="6_4synu"]
+[ext_resource type="PackedScene" uid="uid://e3raa0ucutg5" path="res://scenes/env/robot_base.tscn" id="7_cyf2o"]
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
@@ -44,3 +45,6 @@ position = Vector2(736, 130)
 stream = ExtResource("6_4synu")
 volume_db = -20.873
 autoplay = true
+
+[node name="robot_base" parent="." unique_id=1459635574 instance=ExtResource("7_cyf2o")]
+position = Vector2(566, 293)

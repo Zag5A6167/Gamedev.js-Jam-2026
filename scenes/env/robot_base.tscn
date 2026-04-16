@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://e3raa0ucutg5"]
+
+[ext_resource type="Texture2D" uid="uid://r7ol84arxxes" path="res://images/robot/robot.png" id="1_sq6s8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlt10"]
+
+[sub_resource type="Animation" id="Animation_sq6s8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(46, -44)]
+}
+
+[sub_resource type="Animation" id="Animation_mlt10"]
+resource_name = "idle"
+length = 0.16666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.215, -24.55), Vector2(1.84, -24.55)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h3nmb"]
+_data = {
+&"RESET": SubResource("Animation_sq6s8"),
+&"idle": SubResource("Animation_mlt10")
+}
+
+[node name="robot_base" type="StaticBody2D" unique_id=1459635574]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=607258520]
+position = Vector2(46, -44)
+scale = Vector2(0.07648151, 0.07648151)
+texture = ExtResource("1_sq6s8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2009357723]
+position = Vector2(25, 33)
+scale = Vector2(9.15281, 9.15281)
+shape = SubResource("CircleShape2D_mlt10")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1154158672]
+libraries/ = SubResource("AnimationLibrary_h3nmb")
+autoplay = &"idle"
+
+[node name="InteractionLabel" type="Label" parent="." unique_id=919390027]
+z_index = 20
+offset_left = -51.0
+offset_top = -218.0
+offset_right = 138.0
+offset_bottom = -186.0
+scale = Vector2(1.3531282, 1.3531282)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 23
+text = "0 / 100"
