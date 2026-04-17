@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://e3raa0ucutg5" path="res://scenes/env/robot_base.tscn" id="7_cyf2o"]
 [ext_resource type="PackedScene" uid="uid://dh567p1y8yjy0" path="res://scenes/env/wrench.tscn" id="8_64gt2"]
 [ext_resource type="PackedScene" uid="uid://c8at20ooi42of" path="res://scenes/env/landmine.tscn" id="9_2xk3c"]
+[ext_resource type="PackedScene" uid="uid://baqp3p3nea3vi" path="res://scripts/envscripts/items/boot_upgrade.tscn" id="9_ulx81"]
 
 [sub_resource type="Gradient" id="Gradient_2xk3c"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -21,6 +22,16 @@ fill_to = Vector2(0.6336806, 0.5885417)
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2xk3c"]
 polygon = PackedVector2Array(-433, -630, -526, 6951, 6107, 6710, 6126, -853)
+
+[sub_resource type="Gradient" id="Gradient_ulx81"]
+offsets = PackedFloat32Array(0, 0.99759614, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.8870192, 0.8870192, 0.8870192, 1, 0.620866, 0.4316998, 0.38536692, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_6adrn"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_cyt25"]
+noise = SubResource("FastNoiseLite_6adrn")
+color_ramp = SubResource("Gradient_ulx81")
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
@@ -184,6 +195,9 @@ position = Vector2(5433, 5820)
 [node name="tree31" parent="tree_group" unique_id=1830423500 instance=ExtResource("5_kdyc3")]
 position = Vector2(4852, 6049)
 
+[node name="boot_upgrade" parent="tree_group" unique_id=1803656459 instance=ExtResource("9_ulx81")]
+position = Vector2(2676, 2130)
+
 [node name="landmine2" parent="." unique_id=1395869294 instance=ExtResource("9_2xk3c")]
 position = Vector2(5071, 5901)
 
@@ -192,21 +206,34 @@ position = Vector2(2688.1719, 3117)
 scale = Vector2(126.72946, 117.30925)
 color = Color(0.60585105, 0.38789904, 1, 1)
 energy = 0.52
-blend_mode = 2
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 0.83137256)
 texture = SubResource("GradientTexture2D_ulx81")
 texture_scale = 0.81
+metadata/_edit_lock_ = true
 
 [node name="PointLight2D2" type="PointLight2D" parent="." unique_id=2053155749]
 position = Vector2(5012.0005, 6296)
 scale = Vector2(117.30925, 117.30925)
 color = Color(0.37697807, 0.51095587, 0.9432658, 1)
-energy = 2.08
+energy = 0.95
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_ulx81")
 texture_scale = 0.81
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1418135732]
+visible = false
 position = Vector2(181, 191)
 occluder = SubResource("OccluderPolygon2D_2xk3c")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1323590093]
+self_modulate = Color(1, 1, 1, 0.2)
+offset_right = 5661.0
+offset_bottom = 6342.0
+texture = SubResource("NoiseTexture2D_cyt25")
+metadata/_edit_lock_ = true
+
+[node name="out_of_area" type="StaticBody2D" parent="." unique_id=1706071327]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="out_of_area" unique_id=1009468339]
+polygon = PackedVector2Array(-21, 4632, -72, -26, 5627, -50, 5628, 6328, -8, 6343, -54, 4624, -2357, 4700, -1820, 7986, 8852, 8079, 8008, -954, -1214, -1008, -1557, 4671, -730, 4632)

@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://baqp3p3nea3vi"]
+
+[ext_resource type="Script" uid="uid://b6lq382fn35jr" path="res://scripts/envscripts/items/boot_upgrade.gd" id="1_pe7fg"]
+[ext_resource type="Texture2D" uid="uid://b17bxw2058j38" path="res://assets/items/boot.png" id="1_wi3ls"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pe7fg"]
+
+[sub_resource type="Animation" id="Animation_o6wjp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_a20q7"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.47, 0.93),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -27.245), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h0ybm"]
+_data = {
+&"RESET": SubResource("Animation_o6wjp"),
+&"idle": SubResource("Animation_a20q7")
+}
+
+[node name="boot_upgrade" type="Area2D" unique_id=1803656459]
+script = ExtResource("1_pe7fg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1142808079]
+scale = Vector2(0.12605092, 0.12605092)
+texture = ExtResource("1_wi3ls")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=480062346]
+position = Vector2(-15, 41)
+scale = Vector2(8.030776, 8.030776)
+shape = SubResource("CircleShape2D_pe7fg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2098502476]
+libraries/ = SubResource("AnimationLibrary_h0ybm")
+autoplay = &"idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
