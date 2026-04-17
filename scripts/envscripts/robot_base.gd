@@ -15,7 +15,7 @@ func update_ui():
 
 func robot_upgrade():
 
-	if robot_level >= 3 and current_gears >= 100:
+	if robot_level >= 2 and current_gears >= 50:
 		game_complete()
 		return
 
@@ -36,8 +36,7 @@ func robot_upgrade():
 	
 	if robot_level == 2:
 		gears_needed = 50
-	elif robot_level == 3:
-		gears_needed = 100
+	
 	
 	update_ui()
 
