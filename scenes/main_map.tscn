@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_whrjg"]
 [ext_resource type="PackedScene" uid="uid://br1ifqjqlvcf4" path="res://scenes/items/gear.tscn" id="2_1xo34"]
 [ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
-[ext_resource type="PackedScene" uid="uid://ba8tuyuydmn0l" path="res://scenes/items/fuel.tscn" id="4_uxg3y"]
 [ext_resource type="PackedScene" uid="uid://nj3p46f0ew2r" path="res://scenes/env/tree_1.tscn" id="5_kdyc3"]
 [ext_resource type="AudioStream" uid="uid://3wnw0gr7fl8y" path="res://sounds/menu_song.wav" id="6_4synu"]
 [ext_resource type="PackedScene" uid="uid://e3raa0ucutg5" path="res://scenes/env/robot_base.tscn" id="7_cyf2o"]
@@ -44,47 +43,8 @@ scale = Vector2(1.1393822, 1.275625)
 color = Color(0.5312364, 0.51506704, 0.3129515, 1)
 metadata/_edit_lock_ = true
 
-[node name="gear" parent="." unique_id=149182404 instance=ExtResource("2_1xo34")]
-position = Vector2(1910, 2650)
-
-[node name="gear7" parent="." unique_id=2145958123 instance=ExtResource("2_1xo34")]
-position = Vector2(2076, 2819)
-
-[node name="gear34" parent="." unique_id=547195056 instance=ExtResource("2_1xo34")]
-position = Vector2(2093, 2982)
-
-[node name="gear13" parent="." unique_id=585094065 instance=ExtResource("2_1xo34")]
-position = Vector2(1876, 3005)
-
-[node name="gear15" parent="." unique_id=1498537674 instance=ExtResource("2_1xo34")]
-position = Vector2(1888, 2811)
-
-[node name="gear16" parent="." unique_id=891386577 instance=ExtResource("2_1xo34")]
-position = Vector2(2291, 3197)
-
-[node name="gear18" parent="." unique_id=1992867332 instance=ExtResource("2_1xo34")]
-position = Vector2(2097, 2638)
-
-[node name="gear19" parent="." unique_id=1585528742 instance=ExtResource("2_1xo34")]
-position = Vector2(2773, 3058)
-
-[node name="gear21" parent="." unique_id=1947782349 instance=ExtResource("2_1xo34")]
-position = Vector2(1994, 2511)
-
-[node name="gear22" parent="." unique_id=582946838 instance=ExtResource("2_1xo34")]
-position = Vector2(2125, 3180)
-
-[node name="gear10" parent="." unique_id=989088988 instance=ExtResource("2_1xo34")]
-position = Vector2(2209, 2469)
-
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
 position = Vector2(2299, 2778)
-
-[node name="gear2" parent="." unique_id=1808192086 instance=ExtResource("4_uxg3y")]
-position = Vector2(2814, 3117)
-
-[node name="gear3" parent="." unique_id=108708399 instance=ExtResource("4_uxg3y")]
-position = Vector2(3069, 3147)
 
 [node name="ui_canvas" parent="." unique_id=2071771331 instance=ExtResource("3_eqscl")]
 
@@ -237,3 +197,98 @@ metadata/_edit_lock_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="out_of_area" unique_id=1009468339]
 polygon = PackedVector2Array(-21, 4632, -72, -26, 5627, -50, 5628, 6328, -8, 6343, -54, 4624, -2357, 4700, -1820, 7986, 8852, 8079, 8008, -954, -1214, -1008, -1557, 4671, -730, 4632)
+metadata/_edit_lock_ = true
+
+[node name="Gear1-10" type="Node2D" parent="." unique_id=1283284507]
+
+[node name="gear1" parent="Gear1-10" unique_id=149182404 instance=ExtResource("2_1xo34")]
+position = Vector2(531, 1988)
+
+[node name="gear2" parent="Gear1-10" unique_id=1274588020 instance=ExtResource("2_1xo34")]
+position = Vector2(5298, 845)
+
+[node name="gear3" parent="Gear1-10" unique_id=1381045846 instance=ExtResource("2_1xo34")]
+position = Vector2(1359, 717.99994)
+
+[node name="gear4" parent="Gear1-10" unique_id=934108884 instance=ExtResource("2_1xo34")]
+position = Vector2(153, 978)
+
+[node name="gear5" parent="Gear1-10" unique_id=53091466 instance=ExtResource("2_1xo34")]
+position = Vector2(5491, 6222)
+
+[node name="gear6" parent="Gear1-10" unique_id=916221396 instance=ExtResource("2_1xo34")]
+position = Vector2(5075, 6050)
+
+[node name="gear7" parent="Gear1-10" unique_id=1445720694 instance=ExtResource("2_1xo34")]
+position = Vector2(1384, 6096)
+
+[node name="gear8" parent="Gear1-10" unique_id=829182488 instance=ExtResource("2_1xo34")]
+position = Vector2(3414, 4642)
+
+[node name="gear9" parent="Gear1-10" unique_id=1733221319 instance=ExtResource("2_1xo34")]
+position = Vector2(1441, 4573)
+
+[node name="gear10" parent="Gear1-10" unique_id=64643643 instance=ExtResource("2_1xo34")]
+position = Vector2(1130, 4469)
+
+[node name="Gear1-50" type="Node2D" parent="." unique_id=1632422691]
+
+[node name="gear1" parent="Gear1-50" unique_id=840949464 instance=ExtResource("2_1xo34")]
+position = Vector2(531, 1988)
+
+[node name="gear2" parent="Gear1-50" unique_id=476349478 instance=ExtResource("2_1xo34")]
+position = Vector2(5298, 845)
+
+[node name="gear3" parent="Gear1-50" unique_id=79913718 instance=ExtResource("2_1xo34")]
+position = Vector2(1359, 717.99994)
+
+[node name="gear4" parent="Gear1-50" unique_id=707381055 instance=ExtResource("2_1xo34")]
+position = Vector2(153, 978)
+
+[node name="gear5" parent="Gear1-50" unique_id=1885709106 instance=ExtResource("2_1xo34")]
+position = Vector2(5491, 6222)
+
+[node name="gear6" parent="Gear1-50" unique_id=1606681914 instance=ExtResource("2_1xo34")]
+position = Vector2(5075, 6050)
+
+[node name="gear7" parent="Gear1-50" unique_id=762595640 instance=ExtResource("2_1xo34")]
+position = Vector2(1384, 6096)
+
+[node name="gear8" parent="Gear1-50" unique_id=1667889358 instance=ExtResource("2_1xo34")]
+position = Vector2(3414, 4642)
+
+[node name="gear9" parent="Gear1-50" unique_id=724217236 instance=ExtResource("2_1xo34")]
+position = Vector2(1441, 4573)
+
+[node name="gear10" parent="Gear1-50" unique_id=1873958628 instance=ExtResource("2_1xo34")]
+position = Vector2(1130, 4469)
+
+[node name="gear11" parent="Gear1-50" unique_id=617190152 instance=ExtResource("2_1xo34")]
+position = Vector2(3019, 1877)
+
+[node name="gear12" parent="Gear1-50" unique_id=1252012880 instance=ExtResource("2_1xo34")]
+position = Vector2(5315, 3261)
+
+[node name="gear13" parent="Gear1-50" unique_id=1682656222 instance=ExtResource("2_1xo34")]
+position = Vector2(3847, 607)
+
+[node name="gear14" parent="Gear1-50" unique_id=1223340993 instance=ExtResource("2_1xo34")]
+position = Vector2(2641, 867.00006)
+
+[node name="gear15" parent="Gear1-50" unique_id=1955926008 instance=ExtResource("2_1xo34")]
+position = Vector2(5159, 4408)
+
+[node name="gear16" parent="Gear1-50" unique_id=424498132 instance=ExtResource("2_1xo34")]
+position = Vector2(5204, 5143)
+
+[node name="gear17" parent="Gear1-50" unique_id=1088079510 instance=ExtResource("2_1xo34")]
+position = Vector2(3872, 5985)
+
+[node name="gear18" parent="Gear1-50" unique_id=138117843 instance=ExtResource("2_1xo34")]
+position = Vector2(5260, 4823.9995)
+
+[node name="gear19" parent="Gear1-50" unique_id=1425203352 instance=ExtResource("2_1xo34")]
+position = Vector2(3929, 4462)
+
+[node name="gear20" parent="Gear1-50" unique_id=1988119597 instance=ExtResource("2_1xo34")]
+position = Vector2(3618, 4358)

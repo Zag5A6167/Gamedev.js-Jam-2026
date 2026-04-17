@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b6lq382fn35jr" path="res://scripts/envscripts/items/boot_upgrade.gd" id="1_pe7fg"]
 [ext_resource type="Texture2D" uid="uid://b17bxw2058j38" path="res://assets/items/boot.png" id="1_wi3ls"]
+[ext_resource type="AudioStream" uid="uid://dpp2q6cyjb1dj" path="res://sounds/speed_upgrade.wav" id="3_o6wjp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pe7fg"]
 
@@ -42,7 +43,7 @@ _data = {
 &"idle": SubResource("Animation_a20q7")
 }
 
-[node name="boot_upgrade" type="Area2D" unique_id=1803656459]
+[node name="boot_upgrade" type="Area2D" unique_id=1803656459 groups=["speed_boost_items"]]
 script = ExtResource("1_pe7fg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1142808079]
@@ -57,5 +58,8 @@ shape = SubResource("CircleShape2D_pe7fg")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2098502476]
 libraries/ = SubResource("AnimationLibrary_h0ybm")
 autoplay = &"idle"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=136413554]
+stream = ExtResource("3_o6wjp")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
