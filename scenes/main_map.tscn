@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dq7gasgb8khk1"]
 
+[ext_resource type="Texture2D" uid="uid://qd1jw4n5tk03" path="res://images/BG.png" id="1_ulx81"]
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_whrjg"]
 [ext_resource type="PackedScene" uid="uid://br1ifqjqlvcf4" path="res://scenes/items/gear.tscn" id="2_1xo34"]
 [ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
@@ -34,13 +35,13 @@ color_ramp = SubResource("Gradient_ulx81")
 
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
-[node name="background_map" type="ColorRect" parent="." unique_id=382111132]
+[node name="background_map" type="TextureRect" parent="." unique_id=906448763]
 offset_left = -34.0
 offset_top = -29.0
 offset_right = 4966.0
 offset_bottom = 4971.0
 scale = Vector2(1.1393822, 1.275625)
-color = Color(0.5312364, 0.51506704, 0.3129515, 1)
+texture = ExtResource("1_ulx81")
 metadata/_edit_lock_ = true
 
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
