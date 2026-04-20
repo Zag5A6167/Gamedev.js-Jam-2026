@@ -46,8 +46,19 @@ func game_complete():
 	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	
 	if body.is_in_group("player") and body.gears_held > 0:
-		current_gears += body.gears_held
-		body.gears_held = 0 
+		# 1. คำนวณว่าหุ่นยนต์ยังขาดอีกกี่อันถึงจะครบตามเป้าหมาย
+		var space_left = gears_needed - current_gears
+		
+		# 2. ตรวจสอบว่าผู้เล่นมีเฟืองมากกว่าที่หุ่นยนต์ต้องการไหม
+		if body.gears_held > space_left:
+			# ถ้ามีเกิน: เอาไปเฉพาะเท่าที่ขาด
+			current_gears += space_left
+			body.gears_held -= space_left  # ลบออกเฉพาะส่วนที่หุ่นยนต์รับไป
+		else:
+			# ถ้ามีน้อยกว่าหรือพอดี: เอาไปทั้งหมดที่ผู้เล่นมี
+			current_gears += body.gears_held
+			body.gears_held = 0
+			
+		# 3. อัปเดต UI และเช็คเงื่อนไขการอัปเกรดเลเวล
 		update_ui()
