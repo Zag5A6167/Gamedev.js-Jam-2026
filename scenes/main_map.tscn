@@ -205,6 +205,15 @@ position = Vector2(2676, 2130)
 [node name="boot_upgrade40" parent="tree_group" unique_id=94360611 instance=ExtResource("9_ulx81")]
 position = Vector2(1562, 2159)
 
+[node name="boot_upgrade94" parent="tree_group" unique_id=1859153828 instance=ExtResource("9_ulx81")]
+position = Vector2(761, 782)
+
+[node name="boot_upgrade95" parent="tree_group" unique_id=765493211 instance=ExtResource("9_ulx81")]
+position = Vector2(2469, 602)
+
+[node name="boot_upgrade114" parent="tree_group" unique_id=274374892 instance=ExtResource("9_ulx81")]
+position = Vector2(2469, 602)
+
 [node name="boot_upgrade41" parent="tree_group" unique_id=537693234 instance=ExtResource("9_ulx81")]
 position = Vector2(849, 2725)
 
@@ -219,6 +228,57 @@ position = Vector2(5329, 2781)
 
 [node name="boot_upgrade20" parent="tree_group" unique_id=1077081200 instance=ExtResource("9_ulx81")]
 position = Vector2(4017, 4670)
+
+[node name="boot_upgrade97" parent="tree_group" unique_id=825506422 instance=ExtResource("9_ulx81")]
+position = Vector2(4531, 5275)
+
+[node name="boot_upgrade98" parent="tree_group" unique_id=714186668 instance=ExtResource("9_ulx81")]
+position = Vector2(4531, 5275)
+
+[node name="boot_upgrade99" parent="tree_group" unique_id=637440322 instance=ExtResource("9_ulx81")]
+position = Vector2(3639, 5035)
+
+[node name="boot_upgrade100" parent="tree_group" unique_id=1508528069 instance=ExtResource("9_ulx81")]
+position = Vector2(2877, 4262)
+
+[node name="boot_upgrade101" parent="tree_group" unique_id=139433932 instance=ExtResource("9_ulx81")]
+position = Vector2(2628, 4088)
+
+[node name="boot_upgrade102" parent="tree_group" unique_id=725896732 instance=ExtResource("9_ulx81")]
+position = Vector2(2628, 4088)
+
+[node name="boot_upgrade103" parent="tree_group" unique_id=547947081 instance=ExtResource("9_ulx81")]
+position = Vector2(1532, 3873)
+
+[node name="boot_upgrade104" parent="tree_group" unique_id=1235532691 instance=ExtResource("9_ulx81")]
+position = Vector2(1532, 3873)
+
+[node name="boot_upgrade105" parent="tree_group" unique_id=143472867 instance=ExtResource("9_ulx81")]
+position = Vector2(524, 3553)
+
+[node name="boot_upgrade106" parent="tree_group" unique_id=218295438 instance=ExtResource("9_ulx81")]
+position = Vector2(524, 3553)
+
+[node name="boot_upgrade109" parent="tree_group" unique_id=90238424 instance=ExtResource("9_ulx81")]
+position = Vector2(579, 3340)
+
+[node name="boot_upgrade110" parent="tree_group" unique_id=2145804959 instance=ExtResource("9_ulx81")]
+position = Vector2(402, 2638)
+
+[node name="boot_upgrade111" parent="tree_group" unique_id=600799244 instance=ExtResource("9_ulx81")]
+position = Vector2(402, 2638)
+
+[node name="boot_upgrade112" parent="tree_group" unique_id=1578507683 instance=ExtResource("9_ulx81")]
+position = Vector2(402, 2638)
+
+[node name="boot_upgrade113" parent="tree_group" unique_id=512248092 instance=ExtResource("9_ulx81")]
+position = Vector2(340, 2098)
+
+[node name="boot_upgrade107" parent="tree_group" unique_id=1320926013 instance=ExtResource("9_ulx81")]
+position = Vector2(206, 3266)
+
+[node name="boot_upgrade108" parent="tree_group" unique_id=223234263 instance=ExtResource("9_ulx81")]
+position = Vector2(217, 3871)
 
 [node name="boot_upgrade21" parent="tree_group" unique_id=2111992246 instance=ExtResource("9_ulx81")]
 position = Vector2(2348, 3293)
@@ -236,6 +296,10 @@ position = Vector2(1975, 1272)
 position = Vector2(1468.9999, 2806)
 rotation = 2.5828927
 
+[node name="boot_upgrade96" parent="tree_group" unique_id=870622343 instance=ExtResource("9_ulx81")]
+position = Vector2(1636, 3230)
+rotation = 2.5828927
+
 [node name="boot_upgrade15" parent="tree_group" unique_id=1908057329 instance=ExtResource("9_ulx81")]
 position = Vector2(914.9999, 1912)
 rotation = 2.5828927
@@ -249,6 +313,96 @@ position = Vector2(1033, 2270)
 
 [node name="boot_upgrade3" parent="tree_group" unique_id=38782045 instance=ExtResource("9_ulx81")]
 position = Vector2(5383, 4719)
+
+[node name="boot_upgrade64" parent="tree_group" unique_id=1880840907 instance=ExtResource("9_ulx81")]
+position = Vector2(5383, 4566)
+
+[node name="boot_upgrade65" parent="tree_group" unique_id=540696302 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade66" parent="tree_group" unique_id=704010807 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade67" parent="tree_group" unique_id=367145439 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade68" parent="tree_group" unique_id=512022991 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade69" parent="tree_group" unique_id=710145766 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade70" parent="tree_group" unique_id=408186196 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade71" parent="tree_group" unique_id=1136794086 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade72" parent="tree_group" unique_id=1273394195 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade73" parent="tree_group" unique_id=182226118 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade74" parent="tree_group" unique_id=2136433402 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade75" parent="tree_group" unique_id=1934216865 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade76" parent="tree_group" unique_id=1854209855 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade77" parent="tree_group" unique_id=1584420812 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade78" parent="tree_group" unique_id=680856936 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade79" parent="tree_group" unique_id=368158556 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade80" parent="tree_group" unique_id=1747175242 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade81" parent="tree_group" unique_id=896880044 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade82" parent="tree_group" unique_id=737926847 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade83" parent="tree_group" unique_id=195023433 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade84" parent="tree_group" unique_id=425245343 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade85" parent="tree_group" unique_id=1266770060 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade86" parent="tree_group" unique_id=823008266 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade87" parent="tree_group" unique_id=209073518 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade88" parent="tree_group" unique_id=1965810019 instance=ExtResource("9_ulx81")]
+position = Vector2(3292, 5618)
+
+[node name="boot_upgrade89" parent="tree_group" unique_id=1123156818 instance=ExtResource("9_ulx81")]
+position = Vector2(3242, 5345)
+
+[node name="boot_upgrade90" parent="tree_group" unique_id=1739613128 instance=ExtResource("9_ulx81")]
+position = Vector2(2022, 4813)
+
+[node name="boot_upgrade91" parent="tree_group" unique_id=1046298077 instance=ExtResource("9_ulx81")]
+position = Vector2(3121, 3381)
+
+[node name="boot_upgrade92" parent="tree_group" unique_id=1975212259 instance=ExtResource("9_ulx81")]
+position = Vector2(3625, 2618)
+
+[node name="boot_upgrade93" parent="tree_group" unique_id=2056908552 instance=ExtResource("9_ulx81")]
+position = Vector2(4412, 2153)
 
 [node name="boot_upgrade4" parent="tree_group" unique_id=319839968 instance=ExtResource("9_ulx81")]
 position = Vector2(310, 5097)
@@ -440,15 +594,39 @@ position = Vector2(2936, 472)
 position = Vector2(464, -1607)
 
 [node name="landmine3" parent="." unique_id=236163349 instance=ExtResource("9_2xk3c")]
-position = Vector2(3455, 5463)
+position = Vector2(3450, 5210)
 
 [node name="landmine2" parent="landmine3" unique_id=1199488575 instance=ExtResource("9_2xk3c")]
-position = Vector2(464, -1607)
+position = Vector2(-13, -1095)
 
 [node name="landmine4" parent="." unique_id=1736979853 instance=ExtResource("9_2xk3c")]
 position = Vector2(1572, 5487)
 
 [node name="landmine2" parent="landmine4" unique_id=2048920354 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine93" parent="." unique_id=309782323 instance=ExtResource("9_2xk3c")]
+position = Vector2(284, 5654)
+
+[node name="landmine2" parent="landmine93" unique_id=709927920 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine94" parent="." unique_id=101959299 instance=ExtResource("9_2xk3c")]
+position = Vector2(424, 5657)
+
+[node name="landmine2" parent="landmine94" unique_id=494655890 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine95" parent="." unique_id=1210501287 instance=ExtResource("9_2xk3c")]
+position = Vector2(579, 5675)
+
+[node name="landmine2" parent="landmine95" unique_id=435738453 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine96" parent="." unique_id=366733813 instance=ExtResource("9_2xk3c")]
+position = Vector2(579, 5675)
+
+[node name="landmine2" parent="landmine96" unique_id=679463744 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
 
 [node name="landmine5" parent="." unique_id=1354554400 instance=ExtResource("9_2xk3c")]
@@ -501,6 +679,13 @@ scale = Vector2(4.0848665, 4.0848665)
 [node name="landmine2" parent="landmine26" unique_id=2059613116 instance=ExtResource("9_2xk3c")]
 position = Vector2(5071, 5901)
 
+[node name="landmine73" parent="." unique_id=363289234 instance=ExtResource("9_2xk3c")]
+position = Vector2(898, 4558)
+scale = Vector2(4.013816, 4.013816)
+
+[node name="landmine2" parent="landmine73" unique_id=1704026034 instance=ExtResource("9_2xk3c")]
+position = Vector2(5071, 5901)
+
 [node name="landmine11" parent="." unique_id=1121486030 instance=ExtResource("9_2xk3c")]
 position = Vector2(4639, 2812)
 
@@ -535,7 +720,7 @@ position = Vector2(5071, 5901)
 position = Vector2(466, 2505)
 
 [node name="landmine2" parent="landmine21" unique_id=1327749632 instance=ExtResource("9_2xk3c")]
-position = Vector2(464, -1607)
+position = Vector2(965, -1356)
 
 [node name="landmine24" parent="." unique_id=805557650 instance=ExtResource("9_2xk3c")]
 position = Vector2(1254, 6193)
@@ -560,6 +745,18 @@ position = Vector2(2745, 243)
 
 [node name="landmine2" parent="landmine14" unique_id=2086156699 instance=ExtResource("9_2xk3c")]
 position = Vector2(1439, 4970)
+
+[node name="landmine3" parent="landmine14" unique_id=1512656156 instance=ExtResource("9_2xk3c")]
+position = Vector2(1475, 4768)
+
+[node name="landmine4" parent="landmine14" unique_id=1657316494 instance=ExtResource("9_2xk3c")]
+position = Vector2(2135, 4685)
+
+[node name="landmine5" parent="landmine14" unique_id=1193734840 instance=ExtResource("9_2xk3c")]
+position = Vector2(1983, 5138)
+
+[node name="landmine6" parent="landmine14" unique_id=1833621096 instance=ExtResource("9_2xk3c")]
+position = Vector2(1583, 5210)
 
 [node name="landmine15" parent="." unique_id=2021677472 instance=ExtResource("9_2xk3c")]
 position = Vector2(584, 764)
@@ -631,6 +828,106 @@ position = Vector2(1883, 4995)
 
 [node name="landmine2" parent="landmine32" unique_id=1443766521 instance=ExtResource("9_2xk3c")]
 position = Vector2(618, -1521)
+
+[node name="landmine61" parent="." unique_id=764448991 instance=ExtResource("9_2xk3c")]
+position = Vector2(1376, 5435)
+
+[node name="landmine62" parent="." unique_id=1427319065 instance=ExtResource("9_2xk3c")]
+position = Vector2(3272, 5230)
+
+[node name="landmine92" parent="." unique_id=821816618 instance=ExtResource("9_2xk3c")]
+position = Vector2(3125, 5288)
+
+[node name="landmine63" parent="." unique_id=1703126597 instance=ExtResource("9_2xk3c")]
+position = Vector2(3666, 5251)
+
+[node name="landmine64" parent="." unique_id=570090804 instance=ExtResource("9_2xk3c")]
+position = Vector2(3756, 5341)
+
+[node name="landmine74" parent="." unique_id=1030699959 instance=ExtResource("9_2xk3c")]
+position = Vector2(3792, 5416)
+
+[node name="landmine75" parent="." unique_id=1031114560 instance=ExtResource("9_2xk3c")]
+position = Vector2(3813, 5567)
+
+[node name="landmine76" parent="." unique_id=221925816 instance=ExtResource("9_2xk3c")]
+position = Vector2(3799, 5504)
+
+[node name="landmine77" parent="." unique_id=796920197 instance=ExtResource("9_2xk3c")]
+position = Vector2(3799, 5724)
+
+[node name="landmine78" parent="." unique_id=2002165154 instance=ExtResource("9_2xk3c")]
+position = Vector2(3799, 5724)
+rotation = -2.1722014
+
+[node name="landmine79" parent="." unique_id=1314424598 instance=ExtResource("9_2xk3c")]
+position = Vector2(3710, 5861)
+rotation = -2.1722014
+
+[node name="landmine80" parent="." unique_id=274834545 instance=ExtResource("9_2xk3c")]
+position = Vector2(3710, 5861)
+rotation = -2.1722014
+
+[node name="landmine65" parent="." unique_id=521414804 instance=ExtResource("9_2xk3c")]
+position = Vector2(3734, 5962)
+
+[node name="landmine81" parent="." unique_id=1952459194 instance=ExtResource("9_2xk3c")]
+position = Vector2(3734, 5962)
+
+[node name="landmine82" parent="." unique_id=892246452 instance=ExtResource("9_2xk3c")]
+position = Vector2(3384, 5909)
+
+[node name="landmine83" parent="." unique_id=413853180 instance=ExtResource("9_2xk3c")]
+position = Vector2(3384, 5909)
+
+[node name="landmine66" parent="." unique_id=2092085720 instance=ExtResource("9_2xk3c")]
+position = Vector2(3541, 5920)
+
+[node name="landmine67" parent="." unique_id=1071626906 instance=ExtResource("9_2xk3c")]
+position = Vector2(3002, 5864)
+
+[node name="landmine84" parent="." unique_id=642430471 instance=ExtResource("9_2xk3c")]
+position = Vector2(3247, 5922)
+
+[node name="landmine85" parent="." unique_id=1308234935 instance=ExtResource("9_2xk3c")]
+position = Vector2(3040, 5793)
+
+[node name="landmine86" parent="." unique_id=997353261 instance=ExtResource("9_2xk3c")]
+position = Vector2(3016, 5639)
+
+[node name="landmine87" parent="." unique_id=1885775199 instance=ExtResource("9_2xk3c")]
+position = Vector2(3040, 5701)
+
+[node name="landmine88" parent="." unique_id=2038496753 instance=ExtResource("9_2xk3c")]
+position = Vector2(3040, 5701)
+rotation = -2.4985037
+
+[node name="landmine89" parent="." unique_id=1297262835 instance=ExtResource("9_2xk3c")]
+position = Vector2(3040, 5518)
+rotation = -2.4985037
+
+[node name="landmine90" parent="." unique_id=1660284418 instance=ExtResource("9_2xk3c")]
+position = Vector2(3073.9998, 5410)
+rotation = -2.4985037
+
+[node name="landmine91" parent="." unique_id=498786743 instance=ExtResource("9_2xk3c")]
+position = Vector2(3003.9998, 5583)
+rotation = -2.4985037
+
+[node name="landmine68" parent="." unique_id=866464739 instance=ExtResource("9_2xk3c")]
+position = Vector2(3119, 5932)
+
+[node name="landmine69" parent="." unique_id=150168016 instance=ExtResource("9_2xk3c")]
+position = Vector2(4351, 5824)
+
+[node name="landmine70" parent="." unique_id=1670432469 instance=ExtResource("9_2xk3c")]
+position = Vector2(4495, 5747)
+
+[node name="landmine71" parent="." unique_id=1640146505 instance=ExtResource("9_2xk3c")]
+position = Vector2(5358, 5373)
+
+[node name="landmine72" parent="." unique_id=2115672367 instance=ExtResource("9_2xk3c")]
+position = Vector2(5483, 5389)
 
 [node name="landmine33" parent="." unique_id=616908036 instance=ExtResource("9_2xk3c")]
 position = Vector2(2617, 5321)
@@ -712,6 +1009,42 @@ position = Vector2(1146, 5291)
 [node name="landmine2" parent="landmine45" unique_id=745360620 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
 
+[node name="landmine97" parent="." unique_id=550208777 instance=ExtResource("9_2xk3c")]
+position = Vector2(756, 5683)
+
+[node name="landmine2" parent="landmine97" unique_id=1185980779 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine98" parent="." unique_id=1484717880 instance=ExtResource("9_2xk3c")]
+position = Vector2(957, 5679)
+
+[node name="landmine2" parent="landmine98" unique_id=1941290577 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine99" parent="." unique_id=1866203290 instance=ExtResource("9_2xk3c")]
+position = Vector2(287, 5779)
+
+[node name="landmine2" parent="landmine99" unique_id=236046023 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine100" parent="." unique_id=159573917 instance=ExtResource("9_2xk3c")]
+position = Vector2(283, 5984)
+
+[node name="landmine2" parent="landmine100" unique_id=1187937871 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine101" parent="." unique_id=1710818010 instance=ExtResource("9_2xk3c")]
+position = Vector2(289, 5895)
+
+[node name="landmine2" parent="landmine101" unique_id=1200313357 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine102" parent="." unique_id=1100492165 instance=ExtResource("9_2xk3c")]
+position = Vector2(291, 6119)
+
+[node name="landmine2" parent="landmine102" unique_id=1146889491 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
 [node name="landmine46" parent="." unique_id=1017450011 instance=ExtResource("9_2xk3c")]
 position = Vector2(1807, 4079)
 
@@ -791,7 +1124,13 @@ metadata/_edit_lock_ = true
 [node name="Gear1-10" type="Node2D" parent="." unique_id=1283284507]
 
 [node name="gear1" parent="Gear1-10" unique_id=149182404 instance=ExtResource("2_1xo34")]
-position = Vector2(531, 1988)
+position = Vector2(1432, 1143)
+
+[node name="gear9" parent="Gear1-10" unique_id=1096454149 instance=ExtResource("2_1xo34")]
+position = Vector2(3388, 5472)
+
+[node name="gear12" parent="Gear1-10" unique_id=491087922 instance=ExtResource("2_1xo34")]
+position = Vector2(3388, 5472)
 
 [node name="gear2" parent="Gear1-10" unique_id=1274588020 instance=ExtResource("2_1xo34")]
 position = Vector2(5298, 845)
@@ -817,16 +1156,13 @@ position = Vector2(3796, 610)
 [node name="gear11" parent="Gear1-10" unique_id=1038319188 instance=ExtResource("2_1xo34")]
 position = Vector2(3583, 177)
 
-[node name="gear9" parent="Gear1-10" unique_id=1733221319 instance=ExtResource("2_1xo34")]
-position = Vector2(1441, 4573)
-
 [node name="gear10" parent="Gear1-10" unique_id=64643643 instance=ExtResource("2_1xo34")]
-position = Vector2(1130, 4469)
+position = Vector2(269, 5060.9995)
 
 [node name="Gear1-50" type="Node2D" parent="." unique_id=1632422691]
 
 [node name="gear1" parent="Gear1-50" unique_id=840949464 instance=ExtResource("2_1xo34")]
-position = Vector2(531, 1988)
+position = Vector2(215, 3604)
 
 [node name="gear2" parent="Gear1-50" unique_id=476349478 instance=ExtResource("2_1xo34")]
 position = Vector2(5298, 845)
@@ -834,11 +1170,14 @@ position = Vector2(5298, 845)
 [node name="gear3" parent="Gear1-50" unique_id=79913718 instance=ExtResource("2_1xo34")]
 position = Vector2(1359, 717.99994)
 
+[node name="gear10" parent="Gear1-50" unique_id=1052941630 instance=ExtResource("2_1xo34")]
+position = Vector2(841, 176)
+
 [node name="gear8" parent="Gear1-50" unique_id=439045887 instance=ExtResource("2_1xo34")]
 position = Vector2(2753, 121)
 
 [node name="gear4" parent="Gear1-50" unique_id=707381055 instance=ExtResource("2_1xo34")]
-position = Vector2(153, 978)
+position = Vector2(193, 5167)
 
 [node name="gear5" parent="Gear1-50" unique_id=1885709106 instance=ExtResource("2_1xo34")]
 position = Vector2(5329, 6256)
@@ -853,10 +1192,7 @@ position = Vector2(3220, 129)
 position = Vector2(1499, 6227)
 
 [node name="gear9" parent="Gear1-50" unique_id=724217236 instance=ExtResource("2_1xo34")]
-position = Vector2(1320, 4454)
-
-[node name="gear10" parent="Gear1-50" unique_id=1873958628 instance=ExtResource("2_1xo34")]
-position = Vector2(1017, 4341)
+position = Vector2(333, 5271)
 
 [node name="gear11" parent="Gear1-50" unique_id=617190152 instance=ExtResource("2_1xo34")]
 position = Vector2(3019, 1877)
@@ -876,6 +1212,57 @@ position = Vector2(5159, 4408)
 [node name="gear17" parent="Gear1-50" unique_id=1088079510 instance=ExtResource("2_1xo34")]
 position = Vector2(3511, 5764)
 
+[node name="gear32" parent="Gear1-50" unique_id=1802592137 instance=ExtResource("2_1xo34")]
+position = Vector2(3612, 5651)
+
+[node name="gear33" parent="Gear1-50" unique_id=2139609470 instance=ExtResource("2_1xo34")]
+position = Vector2(3521, 5413)
+
+[node name="gear34" parent="Gear1-50" unique_id=1539361874 instance=ExtResource("2_1xo34")]
+position = Vector2(3521, 5413)
+
+[node name="gear20" parent="Gear1-50" unique_id=893513727 instance=ExtResource("2_1xo34")]
+position = Vector2(3435, 5488)
+
+[node name="gear35" parent="Gear1-50" unique_id=1948511052 instance=ExtResource("2_1xo34")]
+position = Vector2(3385, 5353)
+
+[node name="gear36" parent="Gear1-50" unique_id=1236967142 instance=ExtResource("2_1xo34")]
+position = Vector2(3558, 5499.9995)
+
+[node name="gear37" parent="Gear1-50" unique_id=1981703250 instance=ExtResource("2_1xo34")]
+position = Vector2(3531, 5572)
+
+[node name="gear21" parent="Gear1-50" unique_id=2094330347 instance=ExtResource("2_1xo34")]
+position = Vector2(3477, 5642)
+
+[node name="gear22" parent="Gear1-50" unique_id=1807969737 instance=ExtResource("2_1xo34")]
+position = Vector2(3477, 5642)
+
+[node name="gear23" parent="Gear1-50" unique_id=375172889 instance=ExtResource("2_1xo34")]
+position = Vector2(3348, 5772)
+
+[node name="gear24" parent="Gear1-50" unique_id=741134323 instance=ExtResource("2_1xo34")]
+position = Vector2(3295, 5542)
+
+[node name="gear27" parent="Gear1-50" unique_id=580115039 instance=ExtResource("2_1xo34")]
+position = Vector2(3192, 5720)
+
+[node name="gear28" parent="Gear1-50" unique_id=1070021089 instance=ExtResource("2_1xo34")]
+position = Vector2(3259, 5828)
+
+[node name="gear29" parent="Gear1-50" unique_id=503116613 instance=ExtResource("2_1xo34")]
+position = Vector2(3259, 5828)
+rotation = 0.30227026
+
+[node name="gear30" parent="Gear1-50" unique_id=1973201529 instance=ExtResource("2_1xo34")]
+position = Vector2(3367.0005, 5651)
+rotation = 0.30227026
+
+[node name="gear31" parent="Gear1-50" unique_id=2045019378 instance=ExtResource("2_1xo34")]
+position = Vector2(3367.0005, 5651)
+rotation = 2.0892255
+
 [node name="gear18" parent="Gear1-50" unique_id=138117843 instance=ExtResource("2_1xo34")]
 position = Vector2(5411, 5190)
 
@@ -886,7 +1273,7 @@ position = Vector2(4075, 4745)
 position = Vector2(5366, 3777)
 
 [node name="gear26" parent="Gear1-50" unique_id=1009643792 instance=ExtResource("2_1xo34")]
-position = Vector2(1275, 6230)
+position = Vector2(78, 5844)
 
 [node name="PointLight2D3" type="PointLight2D" parent="." unique_id=1500704669]
 position = Vector2(2546, 2641.0002)
