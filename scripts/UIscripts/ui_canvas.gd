@@ -36,14 +36,16 @@ func _process(delta: float) -> void:
 			game_over()
 
 func update_timer_display():
-	var mins = int(time_left) / 60
+	# ใช้ floor() เพื่อปัดเศษทิ้งให้ชัดเจน หรือใช้ fmod สำหรับวินาที
+	# วิธีนี้จะช่วยลบ Warning เพราะเราบอกโปรแกรมชัดเจนว่าต้องการจัดการเศษอย่างไร
+	var mins = floor(time_left / 60.0) 
 	var secs = int(time_left) % 60
+	
 	timer_label.text = "%02d:%02d" % [mins, secs]
 	
 	if time_left < 10:
 		timer_label.add_theme_color_override("font_color", Color.RED)
 	else:
-		# คืนค่าเป็นสีขาวถ้าเวลามากกว่า 10
 		timer_label.add_theme_color_override("font_color", Color.WHITE)
 
 func game_over():
