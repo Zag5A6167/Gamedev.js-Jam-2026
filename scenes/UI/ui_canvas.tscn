@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cbhitx4pg1e0f" path="res://scripts/UIscripts/ui_canvas.gd" id="1_6sg5j"]
 [ext_resource type="Texture2D" uid="uid://cboly1em7vl2f" path="res://assets/items/gear.png" id="2_v4hh5"]
+[ext_resource type="Texture2D" uid="uid://cx85ur8k1x212" path="res://icons/sound/normal.png" id="3_ymmj6"]
 
 [node name="ui_canvas" type="CanvasLayer" unique_id=2071771331]
 script = ExtResource("1_6sg5j")
@@ -76,3 +77,13 @@ theme_override_constants/outline_size = 19
 theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 50
 text = "(MESSAGE)"
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=171403914]
+offset_left = 24.000061
+offset_top = 4.000001
+offset_right = 280.00006
+offset_bottom = 260.0
+scale = Vector2(0.45356995, 0.45356995)
+texture_normal = ExtResource("3_ymmj6")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
