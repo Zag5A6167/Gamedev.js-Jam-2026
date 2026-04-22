@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-var gears_needed = 10 
+var gears_needed = 5
 var current_gears = 0
 var robot_level = 1 
 
@@ -15,7 +15,7 @@ func update_ui():
 
 func robot_upgrade():
 
-	if robot_level >= 2 and current_gears >= 50:
+	if robot_level >= 2 and current_gears >= 10:
 		game_complete()
 		return
 
@@ -35,7 +35,7 @@ func robot_upgrade():
 	current_gears = 0 #
 	
 	if robot_level == 2:
-		gears_needed = 50
+		gears_needed = 10
 	
 	
 	update_ui()

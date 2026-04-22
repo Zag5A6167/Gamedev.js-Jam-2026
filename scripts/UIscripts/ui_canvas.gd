@@ -4,7 +4,7 @@ extends CanvasLayer
 @onready var timer_label = $Control/TimerLabel
 @onready var message_label = $Control/message_label
 
-var time_left = 300.0
+var time_left = 2.0
 var is_time_active = true
 var message_tween : Tween 
 

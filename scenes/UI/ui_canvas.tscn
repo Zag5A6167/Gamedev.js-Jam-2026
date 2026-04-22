@@ -38,6 +38,7 @@ scale = Vector2(0.047203407, 0.047203407)
 texture = ExtResource("2_v4hh5")
 
 [node name="TimerLabel" type="Label" parent="Control" unique_id=336676212]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5

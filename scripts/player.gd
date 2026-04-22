@@ -3,9 +3,9 @@ extends CharacterBody2D
 var speed = 300.0
 var gears_held = 0
 var fuel_held = 0
-
+var wrench_item = 0
 func _physics_process(delta: float) -> void:
-	print(fuel_held)
+
 	var direction := Input.get_vector("a", "d", "w", "s")
 	
 	if direction != Vector2.ZERO:

@@ -21,7 +21,9 @@ func _body_entered(body):
 	if body.name == "player":
 		player_entered = true
 		label.show()
-	
+		var players = get_tree().get_nodes_in_group("player")
+		if players.size() > 0:
+			players[0].wrench_item += 1
 
 func _body_exited(body):
 	if body.name == "player":
