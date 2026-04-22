@@ -65,7 +65,7 @@ func _on_texture_button_pressed() -> void:
 	AudioServer.set_bus_mute(master_bus, !is_muted)
 	
 	if !is_muted:
-		# เมื่อปิดเสียง ให้ใช้รูป off.png ที่คุณส่งมา
+
 		mute_button.texture_normal = load("res://icons/sound/off.png")
 	else:
 
