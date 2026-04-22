@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://twxx01v2cq4x"]
 
-[ext_resource type="VideoStream" uid="uid://8uh1o8yaavyc" path="res://sounds/intro.ogv" id="1_ioskq"]
+[ext_resource type="VideoStream" path="res://sounds/intro.ogv" id="1_ioskq"]
 [ext_resource type="Script" uid="uid://n3a5ymwqimyj" path="res://scripts/intro.gd" id="2_wfs7u"]
 [ext_resource type="Texture2D" uid="uid://dd5ncrn6buj85" path="res://logo/td.jpeg" id="3_i2l1n"]
 [ext_resource type="Texture2D" uid="uid://bjjaimphected" path="res://images/Deedwayslogo.png" id="4_i2l1n"]
