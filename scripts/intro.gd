@@ -14,10 +14,6 @@ func _ready() -> void:
 
 	play()
 
-func _input(event: InputEvent) -> void:
-	# ระ
-	if event.is_pressed():
-		_transition_to_menu()
 
 func _on_video_finished() -> void:
 	var tween = create_tween()
