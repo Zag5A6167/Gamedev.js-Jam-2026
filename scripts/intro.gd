@@ -1,45 +1,31 @@
 extends VideoStreamPlayer
 
-# ดึง Node ลูกมาสร้างเป็นตัวแปรเพื่อให้เรียกใช้ง่ายๆ
-@onready var logo1 = $logo1
-@onready var logo2 = $logo2
+@onready var color_rect = $ColorRect
+@onready var logo_1 = $logo1
+@onready var logo_2 = $logo2
+@onready var audio_player = $AudioStreamPlayer
 
 func _ready() -> void:
+	# 1. เตรียมความพร้อม ซ่อนโลโก้ก่อน
+	logo_1.hide()
+	logo_2.hide()
 	
-	logo1.modulate.a = 0
-	logo2.modulate.a = 0
+	# 2. เชื่อมต่อ Signal เมื่อวิดีโอเล่นจบ
+	finished.connect(_on_video_finished)
 	
-	
-	self.finished.connect(_on_video_finished)
-	
+	# 3. เริ่มเล่นวิดีโอ Intro
+	play()
 
+func _input(event: InputEvent) -> void:
+	# ระบบ Skip: ถ้ากดปุ่มใดๆ หรือคลิกเมาส์ ให้ข้ามไปหน้าเมนูเลย
+	if event.is_pressed():
+		_transition_to_menu()
 
 func _on_video_finished() -> void:
-	var tween = create_tween()
-	
+	# เมื่อวิดีโอจบ สามารถเลือกว่าจะแสดงโลโก้ต่อ หรือไปหน้าเมนูเลย
+	# ในที่นี้คือสั่งให้ไปหน้าเมนูทันที
+	_transition_to_menu()
 
-	tween.tween_callback(func(): $AudioStreamPlayer.pitch_scale = 1.0)
-	tween.tween_callback($AudioStreamPlayer.play)
-	
-	tween.tween_property(logo1, "modulate:a", 1.0, 1.0)
-	tween.tween_interval(1.5)
-	tween.tween_property(logo1, "modulate:a", 0.0, 1.0)
-	
-
-	tween.tween_callback(func(): $AudioStreamPlayer.pitch_scale = 1.5)
-	tween.tween_callback($AudioStreamPlayer.play)
-	
-	tween.tween_property(logo2, "modulate:a", 1.0, 1.0)
-	tween.tween_interval(1.5)
-	tween.tween_property(logo2, "modulate:a", 0.0, 1.0)
-	
-
-	tween.finished.connect(_change_to_main_menu)
-	
-	
-func _change_to_main_menu():
+func _transition_to_menu() -> void:
+	# เปลี่ยนฉากไปยังหน้า MenuScreen (ตรวจสอบ Path ให้ถูกต้อง)
 	get_tree().change_scene_to_file("res://scenes/menu_screen.tscn")
-	
-func _input(event):
-	if event.is_action_pressed("ui_accept"):
-		_change_to_main_menu()

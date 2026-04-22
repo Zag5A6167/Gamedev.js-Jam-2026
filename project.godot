@@ -11,11 +11,10 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="uid://b5uxtj0stqtkw"
+run/main_scene="uid://dokqragldujix"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
-<<<<<<<HEADrun/main_scene="uid://18nq3lu5npxk"
 
 [display]
 
