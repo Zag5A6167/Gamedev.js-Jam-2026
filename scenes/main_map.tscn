@@ -1248,6 +1248,51 @@ position = Vector2(333, 5271)
 [node name="gear11" parent="Gear1-50" unique_id=617190152 instance=ExtResource("2_1xo34")]
 position = Vector2(3019, 1877)
 
+[node name="gear38" parent="Gear1-50" unique_id=1228055593 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear39" parent="Gear1-50" unique_id=188957837 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear40" parent="Gear1-50" unique_id=1198246472 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear41" parent="Gear1-50" unique_id=1283474916 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear42" parent="Gear1-50" unique_id=934599379 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear43" parent="Gear1-50" unique_id=238299567 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear44" parent="Gear1-50" unique_id=1320122944 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear45" parent="Gear1-50" unique_id=1778858796 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear46" parent="Gear1-50" unique_id=1061623631 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear47" parent="Gear1-50" unique_id=1499689809 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear48" parent="Gear1-50" unique_id=1711806172 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear49" parent="Gear1-50" unique_id=1973160279 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear50" parent="Gear1-50" unique_id=1563130435 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear51" parent="Gear1-50" unique_id=2049748992 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
+[node name="gear52" parent="Gear1-50" unique_id=702822785 instance=ExtResource("2_1xo34")]
+position = Vector2(1884, 2825)
+
 [node name="gear12" parent="Gear1-50" unique_id=1252012880 instance=ExtResource("2_1xo34")]
 position = Vector2(5315, 3261)
 
