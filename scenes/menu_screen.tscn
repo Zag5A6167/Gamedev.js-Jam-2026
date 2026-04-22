@@ -43,6 +43,7 @@ texture_normal = ExtResource("2_ar34o")
 texture_pressed = ExtResource("3_amt2q")
 
 [node name="TextureButton3" type="TextureButton" parent="TextureRect" unique_id=843444131]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
