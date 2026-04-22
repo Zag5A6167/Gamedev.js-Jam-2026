@@ -15,6 +15,7 @@ run/main_scene="uid://twxx01v2cq4x"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="uid://18nq3lu5npxk"
 
 [display]
 
