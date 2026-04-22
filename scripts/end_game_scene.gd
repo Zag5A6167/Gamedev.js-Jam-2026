@@ -59,4 +59,4 @@ func _on_end_sound_finished() -> void:
 	await tween4_out.finished
 	
 
-	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://scenes/menu_screen.tscn")

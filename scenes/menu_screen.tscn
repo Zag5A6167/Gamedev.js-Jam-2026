@@ -1,69 +1,200 @@
-[gd_scene format=3 uid="uid://dokqragldujix"]
+[gd_scene format=3 uid="uid://18nq3lu5npxk"]
 
-[ext_resource type="Script" uid="uid://bkp7qx582adgc" path="res://scenes/menu_screen.gd" id="1_amt2q"]
-[ext_resource type="Texture2D" uid="uid://dc1mcjbp2ab3g" path="res://images/maingamepic.png" id="1_yft84"]
-[ext_resource type="Texture2D" uid="uid://0ar88yu666pu" path="res://images/icons/5690573.png" id="2_e6vgv"]
-[ext_resource type="Texture2D" uid="uid://c0ocewj67fb4l" path="res://images/icons/109197.png" id="3_pn7wg"]
-[ext_resource type="Texture2D" uid="uid://c7rgbfikq1uxw" path="res://images/player/player.png" id="5_ar34o"]
-[ext_resource type="Texture2D" uid="uid://cyv3yqk3qwx5u" path="res://images/icons/9010568.png" id="6_amt2q"]
-[ext_resource type="Texture2D" uid="uid://hkqdxt1i1sx2" path="res://images/icons/10521395.png" id="7_gld7y"]
+[ext_resource type="Script" uid="uid://kt2pchfrjm0w" path="res://scripts/end_game_scene.gd" id="1_sm2ni"]
+[ext_resource type="AudioStream" uid="uid://dug80h6e06e31" path="res://sounds/end_sound.wav" id="2_73fcp"]
+[ext_resource type="Texture2D" uid="uid://bjjaimphected" path="res://images/Deedwayslogo.png" id="3_ar34o"]
+[ext_resource type="Texture2D" uid="uid://dd5ncrn6buj85" path="res://logo/td.jpeg" id="4_amt2q"]
 
-[node name="MenuScreen" type="Control" unique_id=785422116]
+[node name="end_game_scene" type="Control" unique_id=1292684118]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_amt2q")
+script = ExtResource("1_sm2ni")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=55799695]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=878690502]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_yft84")
-expand_mode = 1
+color = Color(0, 0, 0, 1)
 
-[node name="TextureButton" type="TextureButton" parent="TextureRect" unique_id=1700574512]
+[node name="first_label" type="Label" parent="." unique_id=949217176]
+z_index = 20
+layout_mode = 0
+offset_left = 107.0
+offset_top = 297.0
+offset_right = 2149.0
+offset_bottom = 503.1889
+scale = Vector2(0.5396473, 0.5074033)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 60
+text = "The world's future is uncertain, but thanks to you, he’s ready to face it."
+
+[node name="end_sound" type="AudioStreamPlayer" parent="." unique_id=1666350383]
+stream = ExtResource("2_73fcp")
+pitch_scale = 1.88
+
+[node name="second_label" type="Label" parent="." unique_id=795807118]
+visible = false
+z_index = 20
+layout_mode = 0
+offset_left = 284.00003
+offset_top = 296.00003
+offset_right = 2326.0
+offset_bottom = 502.18893
+scale = Vector2(0.5396473, 0.5074033)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 150
+text = "Thank for playing."
+
+[node name="third_label" type="Label" parent="." unique_id=952639014]
+visible = false
+z_index = 20
+layout_mode = 0
+offset_left = 165.0
+offset_top = 77.0
+offset_right = 3669.0
+offset_bottom = 2362.0
+scale = Vector2(0.25798088, 0.24256651)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 150
+text = "Created by 
+
+Zag 
+Tee 
+
+Animation
+ 
+Zag 
+
+Sounds 
+ Pixabay"
+horizontal_alignment = 1
+
+[node name="logo1" type="TextureRect" parent="third_label" unique_id=1030079255]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.42900002
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.42900002
-offset_left = -97.0
-offset_top = -35.880005
-offset_right = 31.0
-offset_bottom = 92.119995
+anchor_bottom = 0.5
+offset_left = 414.82715
+offset_top = -1245.5645
+offset_right = 2462.8271
+offset_bottom = 802.43555
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.5561565, 1.5561565)
-texture_normal = ExtResource("2_e6vgv")
-texture_pressed = ExtResource("3_pn7wg")
+scale = Vector2(0.22104223, 0.22104223)
+texture = ExtResource("3_ar34o")
 
-[node name="Player" type="Sprite2D" parent="TextureRect" unique_id=484442384]
-position = Vector2(1121.0001, 174.99994)
-scale = Vector2(0.08327133, 0.08327133)
-texture = ExtResource("5_ar34o")
-
-[node name="TextureButton3" type="TextureButton" parent="TextureRect" unique_id=1075808330]
+[node name="logo2" type="TextureRect" parent="third_label" unique_id=1209633895]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.794
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.794
-offset_left = -87.0
-offset_top = -78.67999
-offset_right = 88.0
-offset_bottom = 78.32001
+anchor_bottom = 0.5
+offset_left = 945.8745
+offset_top = -1187.8484
+offset_right = 2993.875
+offset_bottom = 860.1516
 grow_horizontal = 2
-grow_vertical = 0
-texture_normal = ExtResource("6_amt2q")
-texture_pressed = ExtResource("7_gld7y")
-stretch_mode = 0
+grow_vertical = 2
+scale = Vector2(0.15862171, 0.15862171)
+texture = ExtResource("4_amt2q")
 
-[connection signal="pressed" from="TextureRect/TextureButton" to="TextureRect/TextureButton" method="_on_pressed"]
+[node name="forth_label" type="Label" parent="." unique_id=470543998]
+visible = false
+z_index = 20
+layout_mode = 0
+offset_left = 165.0
+offset_top = 77.0
+offset_right = 3669.0
+offset_bottom = 2362.0
+scale = Vector2(0.25798088, 0.24256651)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 150
+horizontal_alignment = 1
+
+[node name="logo1" type="TextureRect" parent="forth_label" unique_id=195731626]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1348.8694
+offset_top = -759.1
+offset_right = 3228.0967
+offset_bottom = 3817.8657
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.22104223, 0.22104223)
+texture = ExtResource("3_ar34o")
+
+[node name="logo2" type="TextureRect" parent="forth_label" unique_id=1346997260]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 507.85742
+offset_top = -585.95166
+offset_right = 4848.1904
+offset_bottom = 3754.3804
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15862171, 0.15862171)
+texture = ExtResource("4_amt2q")
+
+[node name="third_label" type="Label" parent="forth_label" unique_id=405044314]
+z_index = 20
+layout_mode = 0
+offset_left = -647.33484
+offset_top = 1315.1033
+offset_right = 2856.665
+offset_bottom = 3600.1033
+scale = Vector2(0.90348864, 0.9641949)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 150
+text = "Deedways"
+horizontal_alignment = 1
+
+[node name="third_label2" type="Label" parent="forth_label" unique_id=1409759701]
+z_index = 20
+layout_mode = 0
+offset_left = 1062.0941
+offset_top = 1315.1033
+offset_right = 4566.094
+offset_bottom = 3600.1033
+scale = Vector2(0.90348864, 0.9641949)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 150
+text = "TreeDown Studio"
+horizontal_alignment = 1
+
+[connection signal="finished" from="end_sound" to="." method="_on_end_sound_finished"]
