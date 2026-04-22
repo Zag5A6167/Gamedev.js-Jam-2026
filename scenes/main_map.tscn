@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dq7gasgb8khk1"]
 
+[ext_resource type="Texture2D" uid="uid://qd1jw4n5tk03" path="res://images/BG.png" id="1_ulx81"]
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_whrjg"]
 [ext_resource type="PackedScene" uid="uid://br1ifqjqlvcf4" path="res://scenes/items/gear.tscn" id="2_1xo34"]
 [ext_resource type="PackedScene" uid="uid://dlod0b82ju70" path="res://scenes/UI/ui_canvas.tscn" id="3_eqscl"]
@@ -8,15 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://e3raa0ucutg5" path="res://scenes/env/robot_base.tscn" id="7_cyf2o"]
 [ext_resource type="PackedScene" uid="uid://c8at20ooi42of" path="res://scenes/env/landmine.tscn" id="9_2xk3c"]
 [ext_resource type="PackedScene" uid="uid://baqp3p3nea3vi" path="res://scripts/envscripts/items/boot_upgrade.tscn" id="9_ulx81"]
-
-[sub_resource type="Gradient" id="Gradient_2xk3c"]
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_ulx81"]
-gradient = SubResource("Gradient_2xk3c")
-fill = 1
-fill_from = Vector2(0.5260417, 0.43229166)
-fill_to = Vector2(0.6336806, 0.5885417)
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2xk3c"]
 polygon = PackedVector2Array(-433, -630, -526, 6951, 6107, 6710, 6126, -853)
@@ -31,15 +23,32 @@ colors = PackedColorArray(0, 0, 0, 1, 0.8870192, 0.8870192, 0.8870192, 1, 0.6208
 noise = SubResource("FastNoiseLite_6adrn")
 color_ramp = SubResource("Gradient_ulx81")
 
+[sub_resource type="Gradient" id="Gradient_6adrn"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.13701923, 0.45432693, 0.9639423)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1, 0.9606991, 0.9606991, 0.9606991, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cyt25"]
+gradient = SubResource("Gradient_6adrn")
+
+[sub_resource type="Gradient" id="Gradient_2xk3c"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ulx81"]
+gradient = SubResource("Gradient_2xk3c")
+fill = 1
+fill_from = Vector2(0.5260417, 0.43229166)
+fill_to = Vector2(0.6336806, 0.5885417)
+
 [node name="main_map" type="Node2D" unique_id=1477754397]
 
-[node name="background_map" type="ColorRect" parent="." unique_id=382111132]
+[node name="background_map" type="TextureRect" parent="." unique_id=906448763]
 offset_left = -34.0
 offset_top = -29.0
 offset_right = 4966.0
 offset_bottom = 4971.0
 scale = Vector2(1.1393822, 1.275625)
-color = Color(0.5312364, 0.51506704, 0.3129515, 1)
+texture = ExtResource("1_ulx81")
 metadata/_edit_lock_ = true
 
 [node name="player" parent="." unique_id=1550689244 instance=ExtResource("1_whrjg")]
@@ -430,13 +439,13 @@ position = Vector2(464, -1607)
 position = Vector2(2745, 243)
 
 [node name="landmine2" parent="landmine14" unique_id=2086156699 instance=ExtResource("9_2xk3c")]
-position = Vector2(5071, 5901)
+position = Vector2(1439, 4970)
 
 [node name="landmine15" parent="." unique_id=2021677472 instance=ExtResource("9_2xk3c")]
 position = Vector2(584, 764)
 
 [node name="landmine2" parent="landmine15" unique_id=1842128101 instance=ExtResource("9_2xk3c")]
-position = Vector2(5071, 5901)
+position = Vector2(3103, 3509)
 
 [node name="landmine16" parent="." unique_id=1192654333 instance=ExtResource("9_2xk3c")]
 position = Vector2(584, 764)
@@ -470,7 +479,7 @@ position = Vector2(5071, 5901)
 position = Vector2(6536, 7055)
 
 [node name="landmine2" parent="landmine28" unique_id=1433566155 instance=ExtResource("9_2xk3c")]
-position = Vector2(464, -1607)
+position = Vector2(-1967, -2465)
 
 [node name="landmine29" parent="." unique_id=1003311181 instance=ExtResource("9_2xk3c")]
 position = Vector2(4920, 6617)
@@ -479,7 +488,7 @@ position = Vector2(4920, 6617)
 position = Vector2(464, -1607)
 
 [node name="landmine30" parent="." unique_id=1507976187 instance=ExtResource("9_2xk3c")]
-position = Vector2(3037, 6641)
+position = Vector2(3063, 4457)
 
 [node name="landmine2" parent="landmine30" unique_id=1432656550 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
@@ -535,7 +544,7 @@ scale = Vector2(4.0848665, 4.0848665)
 position = Vector2(5071, 5901)
 
 [node name="landmine39" parent="." unique_id=706664556 instance=ExtResource("9_2xk3c")]
-position = Vector2(6104, 3966)
+position = Vector2(4895, 4419)
 
 [node name="landmine2" parent="landmine39" unique_id=1864139878 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
@@ -571,7 +580,7 @@ position = Vector2(1931, 3659)
 position = Vector2(464, -1607)
 
 [node name="landmine45" parent="." unique_id=609295630 instance=ExtResource("9_2xk3c")]
-position = Vector2(2719, 7347)
+position = Vector2(1146, 5291)
 
 [node name="landmine2" parent="landmine45" unique_id=745360620 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
@@ -582,11 +591,17 @@ position = Vector2(1807, 4079)
 [node name="landmine2" parent="landmine46" unique_id=572901301 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
 
+[node name="landmine46" parent="landmine46" unique_id=304309023 instance=ExtResource("9_2xk3c")]
+position = Vector2(1807, 4079)
+
+[node name="landmine2" parent="landmine46/landmine46" unique_id=1511132859 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
 [node name="landmine47" parent="." unique_id=742813561 instance=ExtResource("9_2xk3c")]
 position = Vector2(1807, 4079)
 
 [node name="landmine2" parent="landmine47" unique_id=387431052 instance=ExtResource("9_2xk3c")]
-position = Vector2(464, -1607)
+position = Vector2(342, -1280)
 
 [node name="landmine48" parent="." unique_id=1418724268 instance=ExtResource("9_2xk3c")]
 position = Vector2(4210, 1397)
@@ -627,27 +642,6 @@ rotation = -1.2034464
 
 [node name="landmine2" parent="landmine53" unique_id=911070449 instance=ExtResource("9_2xk3c")]
 position = Vector2(5071, 5901)
-
-[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1783933576]
-position = Vector2(2688.1719, 3117)
-scale = Vector2(126.72946, 117.30925)
-color = Color(0.60585105, 0.38789904, 1, 1)
-energy = 0.52
-shadow_enabled = true
-shadow_color = Color(0, 0, 0, 0.83137256)
-texture = SubResource("GradientTexture2D_ulx81")
-texture_scale = 0.81
-metadata/_edit_lock_ = true
-
-[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=2053155749]
-position = Vector2(5012.0005, 6296)
-scale = Vector2(117.30925, 117.30925)
-color = Color(0.37697807, 0.51095587, 0.9432658, 1)
-energy = 0.95
-shadow_enabled = true
-texture = SubResource("GradientTexture2D_ulx81")
-texture_scale = 0.81
-metadata/_edit_lock_ = true
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1418135732]
 visible = false
@@ -766,3 +760,50 @@ position = Vector2(5366, 3777)
 
 [node name="gear26" parent="Gear1-50" unique_id=1009643792 instance=ExtResource("2_1xo34")]
 position = Vector2(1275, 6230)
+
+[node name="PointLight2D3" type="PointLight2D" parent="." unique_id=1500704669]
+position = Vector2(2546, 2641.0002)
+scale = Vector2(3.578125, 3.484375)
+color = Color(1, 1, 1, 0.050980393)
+energy = 6.76
+texture = SubResource("GradientTexture2D_cyt25")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1783933576]
+position = Vector2(2688.1719, 3117)
+scale = Vector2(126.72946, 117.30925)
+color = Color(0.60585105, 0.38789904, 1, 1)
+energy = 0.52
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.83137256)
+texture = SubResource("GradientTexture2D_ulx81")
+texture_scale = 0.81
+metadata/_edit_lock_ = true
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=2053155749]
+position = Vector2(5358.0005, 6365.0005)
+scale = Vector2(117.30925, 117.30925)
+color = Color(0.37697807, 0.51095587, 0.9432658, 1)
+energy = 0.95
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_ulx81")
+texture_scale = 0.81
+
+[node name="PointLight2D4" type="PointLight2D" parent="." unique_id=2080433117]
+position = Vector2(2536.0002, 2813)
+scale = Vector2(117.30925, 117.30925)
+color = Color(0.68376607, 0.5158402, 0, 1)
+energy = 2.8
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_ulx81")
+texture_scale = 0.81
+metadata/_edit_lock_ = true
+
+[node name="PointLight2D5" type="PointLight2D" parent="." unique_id=1238948269]
+position = Vector2(2488, 2713)
+scale = Vector2(44.881477, 39.210186)
+color = Color(0, 0, 1, 1)
+energy = 7.64
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_ulx81")
+texture_scale = 0.81
+metadata/_edit_lock_ = true

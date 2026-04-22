@@ -43,11 +43,23 @@ func robot_upgrade():
 func game_complete():
 	print("Game Complete!")
 	$Label.text = "MISSION COMPLETE"
+	await get_tree().create_timer(3.0).timeout
+	get_tree().change_scene_to_file("res://scenes/end_game_scene.tscn")
 	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	
 	if body.is_in_group("player") and body.gears_held > 0:
-		current_gears += body.gears_held
-		body.gears_held = 0 
+	
+		var space_left = gears_needed - current_gears
+		
+
+		if body.gears_held > space_left:
+	
+			current_gears += space_left
+			body.gears_held -= space_left 
+		else:
+	
+			current_gears += body.gears_held
+			body.gears_held = 0
+
 		update_ui()

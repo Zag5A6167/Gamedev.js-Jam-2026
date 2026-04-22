@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://h8oikoubt1io"]
+
+[ext_resource type="Script" uid="uid://kt2pchfrjm0w" path="res://scripts/end_game_scene.gd" id="1_n1x8e"]
+[ext_resource type="AudioStream" uid="uid://dug80h6e06e31" path="res://sounds/end_sound.wav" id="2_n4w7i"]
+
+[node name="end_game_scene" type="Control" unique_id=1292684118]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n1x8e")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=878690502]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="first_label" type="Label" parent="." unique_id=949217176]
+z_index = 20
+layout_mode = 0
+offset_left = 107.0
+offset_top = 297.0
+offset_right = 2149.0
+offset_bottom = 503.1889
+scale = Vector2(0.5396473, 0.5074033)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 60
+text = "The world's future is uncertain, but thanks to you, he’s ready to face it."
+
+[node name="end_sound" type="AudioStreamPlayer" parent="." unique_id=1666350383]
+stream = ExtResource("2_n4w7i")
+
+[node name="second_label" type="Label" parent="." unique_id=795807118]
+visible = false
+z_index = 20
+layout_mode = 0
+offset_left = 284.00003
+offset_top = 296.00003
+offset_right = 2326.0
+offset_bottom = 502.18893
+scale = Vector2(0.5396473, 0.5074033)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/font_size = 150
+text = "Thank for playing."
+
+[connection signal="finished" from="end_sound" to="." method="_on_end_sound_finished"]
