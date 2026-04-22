@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b5uxtj0stqtkw"]
+
+[ext_resource type="VideoStream" uid="uid://8uh1o8yaavyc" path="res://sounds/intro.ogv" id="1_ioskq"]
+[ext_resource type="Script" uid="uid://n3a5ymwqimyj" path="res://scripts/intro.gd" id="2_4bx60"]
+[ext_resource type="Texture2D" uid="uid://dd5ncrn6buj85" path="res://logo/td.jpeg" id="3_i2l1n"]
+[ext_resource type="Texture2D" uid="uid://bjjaimphected" path="res://images/Deedwayslogo.png" id="4_i2l1n"]
+[ext_resource type="AudioStream" uid="uid://devsapa05nhr" path="res://sounds/intro_logo.wav" id="5_wfs7u"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" unique_id=714674609]
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("1_ioskq")
+autoplay = true
+script = ExtResource("2_4bx60")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=166933195]
+z_index = -10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="logo1" type="TextureRect" parent="." unique_id=1143588624]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -245.0
+offset_top = -247.0
+offset_right = 1803.0
+offset_bottom = 1801.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.22104223, 0.22104223)
+texture = ExtResource("4_i2l1n")
+
+[node name="logo2" type="TextureRect" parent="." unique_id=1122736239]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -175.99998
+offset_right = 1894.0
+offset_bottom = 1872.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15862171, 0.15862171)
+texture = ExtResource("3_i2l1n")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=481258968]
+stream = ExtResource("5_wfs7u")
