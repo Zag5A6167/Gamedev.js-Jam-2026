@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://twxx01v2cq4x"]
 
 [ext_resource type="VideoStream" path="res://sounds/intro.ogv" id="1_ioskq"]
+[ext_resource type="Script" uid="uid://n3a5ymwqimyj" path="res://scripts/intro.gd" id="2_wfs7u"]
 [ext_resource type="Texture2D" uid="uid://dd5ncrn6buj85" path="res://logo/td.jpeg" id="3_i2l1n"]
 [ext_resource type="Texture2D" uid="uid://bjjaimphected" path="res://images/Deedwayslogo.png" id="4_i2l1n"]
 [ext_resource type="AudioStream" uid="uid://devsapa05nhr" path="res://sounds/intro_logo.wav" id="5_wfs7u"]
@@ -10,6 +11,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 stream = ExtResource("1_ioskq")
 autoplay = true
+script = ExtResource("2_wfs7u")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=166933195]
 z_index = -10
@@ -22,6 +24,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="logo1" type="TextureRect" parent="." unique_id=1143588624]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -38,6 +41,7 @@ scale = Vector2(0.22104223, 0.22104223)
 texture = ExtResource("4_i2l1n")
 
 [node name="logo2" type="TextureRect" parent="." unique_id=1122736239]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
