@@ -154,6 +154,9 @@ position = Vector2(2217, 2975)
 [node name="tree23" parent="tree_group" unique_id=714070479 instance=ExtResource("5_kdyc3")]
 position = Vector2(4599, 2283)
 
+[node name="tree47" parent="tree_group" unique_id=2113021831 instance=ExtResource("5_kdyc3")]
+position = Vector2(4848, 2040)
+
 [node name="tree24" parent="tree_group" unique_id=86378907 instance=ExtResource("5_kdyc3")]
 position = Vector2(3421, 3508)
 
@@ -280,6 +283,9 @@ position = Vector2(206, 3266)
 [node name="boot_upgrade108" parent="tree_group" unique_id=223234263 instance=ExtResource("9_ulx81")]
 position = Vector2(217, 3871)
 
+[node name="boot_upgrade116" parent="tree_group" unique_id=21609122 instance=ExtResource("9_ulx81")]
+position = Vector2(1066, 4312)
+
 [node name="boot_upgrade21" parent="tree_group" unique_id=2111992246 instance=ExtResource("9_ulx81")]
 position = Vector2(2348, 3293)
 
@@ -403,6 +409,9 @@ position = Vector2(3625, 2618)
 
 [node name="boot_upgrade93" parent="tree_group" unique_id=2056908552 instance=ExtResource("9_ulx81")]
 position = Vector2(4412, 2153)
+
+[node name="boot_upgrade115" parent="tree_group" unique_id=817996921 instance=ExtResource("9_ulx81")]
+position = Vector2(5029, 2764)
 
 [node name="boot_upgrade4" parent="tree_group" unique_id=319839968 instance=ExtResource("9_ulx81")]
 position = Vector2(310, 5097)
@@ -680,7 +689,7 @@ scale = Vector2(4.0848665, 4.0848665)
 position = Vector2(5071, 5901)
 
 [node name="landmine73" parent="." unique_id=363289234 instance=ExtResource("9_2xk3c")]
-position = Vector2(898, 4558)
+position = Vector2(1199, 4676)
 scale = Vector2(4.013816, 4.013816)
 
 [node name="landmine2" parent="landmine73" unique_id=1704026034 instance=ExtResource("9_2xk3c")]
@@ -739,6 +748,10 @@ position = Vector2(342, 2925)
 
 [node name="landmine2" parent="landmine23" unique_id=662191125 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
+
+[node name="landmine3" parent="landmine23" unique_id=670476695 instance=ExtResource("9_2xk3c")]
+position = Vector2(979, -2162)
+scale = Vector2(0.39989722, 0.39989722)
 
 [node name="landmine14" parent="." unique_id=1272553945 instance=ExtResource("9_2xk3c")]
 position = Vector2(2745, 243)
@@ -831,6 +844,26 @@ position = Vector2(618, -1521)
 
 [node name="landmine61" parent="." unique_id=764448991 instance=ExtResource("9_2xk3c")]
 position = Vector2(1376, 5435)
+
+[node name="landmine106" parent="." unique_id=504311779 instance=ExtResource("9_2xk3c")]
+position = Vector2(1955, 3288)
+scale = Vector2(0.31664598, 0.31664598)
+
+[node name="landmine107" parent="." unique_id=1010222270 instance=ExtResource("9_2xk3c")]
+position = Vector2(4354, 2479)
+scale = Vector2(0.31664598, 0.31664598)
+
+[node name="landmine108" parent="." unique_id=856805592 instance=ExtResource("9_2xk3c")]
+position = Vector2(5550, 1416)
+scale = Vector2(0.31664598, 0.31664598)
+
+[node name="landmine109" parent="." unique_id=1562612048 instance=ExtResource("9_2xk3c")]
+position = Vector2(3374, 1142)
+scale = Vector2(0.31664598, 0.31664598)
+
+[node name="landmine110" parent="." unique_id=2067010602 instance=ExtResource("9_2xk3c")]
+position = Vector2(2676, 1747)
+scale = Vector2(0.31664598, 0.31664598)
 
 [node name="landmine62" parent="." unique_id=1427319065 instance=ExtResource("9_2xk3c")]
 position = Vector2(3272, 5230)
@@ -1021,6 +1054,17 @@ position = Vector2(957, 5679)
 [node name="landmine2" parent="landmine98" unique_id=1941290577 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
 
+[node name="landmine104" parent="." unique_id=1505691299 instance=ExtResource("9_2xk3c")]
+position = Vector2(1295, 5893)
+scale = Vector2(0.28964975, 0.29393354)
+
+[node name="landmine2" parent="landmine104" unique_id=2101461407 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine105" parent="." unique_id=852810695 instance=ExtResource("9_2xk3c")]
+position = Vector2(2258, 5133)
+scale = Vector2(0.28964975, 0.29393354)
+
 [node name="landmine99" parent="." unique_id=1866203290 instance=ExtResource("9_2xk3c")]
 position = Vector2(287, 5779)
 
@@ -1037,6 +1081,13 @@ position = Vector2(464, -1607)
 position = Vector2(289, 5895)
 
 [node name="landmine2" parent="landmine101" unique_id=1200313357 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine103" parent="." unique_id=1260489432 instance=ExtResource("9_2xk3c")]
+position = Vector2(108.00001, 5922.0005)
+scale = Vector2(0.26397216, 0.26397216)
+
+[node name="landmine2" parent="landmine103" unique_id=321114812 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
 
 [node name="landmine102" parent="." unique_id=1100492165 instance=ExtResource("9_2xk3c")]
@@ -1273,7 +1324,7 @@ position = Vector2(4075, 4745)
 position = Vector2(5366, 3777)
 
 [node name="gear26" parent="Gear1-50" unique_id=1009643792 instance=ExtResource("2_1xo34")]
-position = Vector2(78, 5844)
+position = Vector2(110, 5925)
 
 [node name="PointLight2D3" type="PointLight2D" parent="." unique_id=1500704669]
 position = Vector2(2546, 2641.0002)
