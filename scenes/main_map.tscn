@@ -97,6 +97,24 @@ position = Vector2(4948, 1572.0002)
 [node name="tree10" parent="tree_group" unique_id=646463021 instance=ExtResource("5_kdyc3")]
 position = Vector2(2538, 1266)
 
+[node name="tree41" parent="tree_group" unique_id=345780065 instance=ExtResource("5_kdyc3")]
+position = Vector2(126, 214)
+
+[node name="tree42" parent="tree_group" unique_id=153515226 instance=ExtResource("5_kdyc3")]
+position = Vector2(292, 87)
+
+[node name="tree43" parent="tree_group" unique_id=1395444136 instance=ExtResource("5_kdyc3")]
+position = Vector2(497, 92)
+
+[node name="tree44" parent="tree_group" unique_id=2013278380 instance=ExtResource("5_kdyc3")]
+position = Vector2(639, 131)
+
+[node name="tree45" parent="tree_group" unique_id=1347844090 instance=ExtResource("5_kdyc3")]
+position = Vector2(96, 444)
+
+[node name="tree46" parent="tree_group" unique_id=276196319 instance=ExtResource("5_kdyc3")]
+position = Vector2(125, 596)
+
 [node name="tree11" parent="tree_group" unique_id=1149396873 instance=ExtResource("5_kdyc3")]
 position = Vector2(4920, 574)
 
@@ -184,6 +202,18 @@ position = Vector2(1975, 1272)
 [node name="boot_upgrade18" parent="tree_group" unique_id=1349994707 instance=ExtResource("9_ulx81")]
 position = Vector2(2676, 2130)
 
+[node name="boot_upgrade40" parent="tree_group" unique_id=94360611 instance=ExtResource("9_ulx81")]
+position = Vector2(1562, 2159)
+
+[node name="boot_upgrade41" parent="tree_group" unique_id=537693234 instance=ExtResource("9_ulx81")]
+position = Vector2(849, 2725)
+
+[node name="boot_upgrade42" parent="tree_group" unique_id=852004241 instance=ExtResource("9_ulx81")]
+position = Vector2(3841, 3624)
+
+[node name="boot_upgrade43" parent="tree_group" unique_id=982672403 instance=ExtResource("9_ulx81")]
+position = Vector2(3841, 3624)
+
 [node name="boot_upgrade19" parent="tree_group" unique_id=1124628435 instance=ExtResource("9_ulx81")]
 position = Vector2(5329, 2781)
 
@@ -231,6 +261,66 @@ position = Vector2(5070, 128)
 
 [node name="boot_upgrade6" parent="tree_group" unique_id=1730136705 instance=ExtResource("9_ulx81")]
 position = Vector2(4061, 6028)
+
+[node name="boot_upgrade44" parent="tree_group" unique_id=780135115 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade45" parent="tree_group" unique_id=1984874138 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade46" parent="tree_group" unique_id=1287374718 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade47" parent="tree_group" unique_id=144586289 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade48" parent="tree_group" unique_id=1598011534 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade49" parent="tree_group" unique_id=1835602520 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade50" parent="tree_group" unique_id=1556128985 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade51" parent="tree_group" unique_id=381609224 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade52" parent="tree_group" unique_id=1933865419 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade53" parent="tree_group" unique_id=386829370 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade54" parent="tree_group" unique_id=775697757 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade55" parent="tree_group" unique_id=189789554 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade56" parent="tree_group" unique_id=758757662 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade57" parent="tree_group" unique_id=508536588 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade58" parent="tree_group" unique_id=467420422 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade59" parent="tree_group" unique_id=1159289639 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade60" parent="tree_group" unique_id=1652757563 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade61" parent="tree_group" unique_id=774189268 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade62" parent="tree_group" unique_id=664891937 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
+
+[node name="boot_upgrade63" parent="tree_group" unique_id=1495830839 instance=ExtResource("9_ulx81")]
+position = Vector2(326, 259)
 
 [node name="boot_upgrade16" parent="tree_group" unique_id=845237238 instance=ExtResource("9_ulx81")]
 position = Vector2(5140, 5651)
@@ -311,6 +401,36 @@ position = Vector2(3445, 39)
 position = Vector2(5071, 5901)
 
 [node name="landmine2" parent="landmine2" unique_id=359668716 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine56" parent="." unique_id=72994745 instance=ExtResource("9_2xk3c")]
+position = Vector2(3327, 4824)
+
+[node name="landmine2" parent="landmine56" unique_id=1590107613 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine57" parent="." unique_id=1183532344 instance=ExtResource("9_2xk3c")]
+position = Vector2(2740, 4797)
+
+[node name="landmine2" parent="landmine57" unique_id=1671026304 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine58" parent="." unique_id=391863181 instance=ExtResource("9_2xk3c")]
+position = Vector2(3332, 3936)
+
+[node name="landmine2" parent="landmine58" unique_id=982283260 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine59" parent="." unique_id=404136894 instance=ExtResource("9_2xk3c")]
+position = Vector2(1185, 3328)
+
+[node name="landmine2" parent="landmine59" unique_id=379800101 instance=ExtResource("9_2xk3c")]
+position = Vector2(464, -1607)
+
+[node name="landmine55" parent="." unique_id=668787485 instance=ExtResource("9_2xk3c")]
+position = Vector2(3197, 3581)
+
+[node name="landmine2" parent="landmine55" unique_id=1023239625 instance=ExtResource("9_2xk3c")]
 position = Vector2(464, -1607)
 
 [node name="landmine54" parent="." unique_id=862130594 instance=ExtResource("9_2xk3c")]
@@ -452,6 +572,13 @@ position = Vector2(584, 764)
 rotation = -1.2034464
 
 [node name="landmine2" parent="landmine16" unique_id=872980303 instance=ExtResource("9_2xk3c")]
+position = Vector2(5071, 5901)
+
+[node name="landmine60" parent="." unique_id=150641187 instance=ExtResource("9_2xk3c")]
+position = Vector2(227, 1337)
+rotation = -1.2034464
+
+[node name="landmine2" parent="landmine60" unique_id=2035085320 instance=ExtResource("9_2xk3c")]
 position = Vector2(5071, 5901)
 
 [node name="landmine17" parent="." unique_id=2033312607 instance=ExtResource("9_2xk3c")]
@@ -787,6 +914,7 @@ energy = 0.95
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_ulx81")
 texture_scale = 0.81
+metadata/_edit_lock_ = true
 
 [node name="PointLight2D4" type="PointLight2D" parent="." unique_id=2080433117]
 position = Vector2(2536.0002, 2813)
